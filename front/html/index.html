@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>CONNECT</title>
+<script
+src="http://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"></script>
+<style type="text/css">
+	#guide_wrap {padding:10px;width:1250px;margin:0 auto;}
+	table {border-collapse:collapse;border-spacing:0;}
+	table + table{margin-top:30px;}
+	table caption{text-align:left;padding:10px 0;font-size:20px;font-weight:bold;}
+	table th, strong {font-weight:normal;}
+	h1{
+		margin:0 0 10px 0;
+		text-align:center;
+		font-size:2em;
+		color:#000
+	}
+	a {text-decoration:none;}
+	a:hover {text-decoration:underline;}
+	table {
+		width:100%;
+		margin-top:5px;
+		border-top:2px solid #1e61a8;
+	}
+	table th, table td{
+		padding:5px 7px;
+		border-left:1px solid #ccc; border-bottom:1px solid #ccc;
+	}
+	table th:rowspan + th, table td:rowspan + td{border-left:1px solid #ccc;}
+	td.lineli, th.lineli {border-left:1px solid #ccc !important;}
+	table th:first-child, table td:first-child{border-left:0 none}
+	table thead th {
+		font-family:'ngB';
+		font-size:13px;
+		color:#000;
+		border-bottom:1px solid #ccc;
+		background-color:#f2f2f2;
+	}
+	table td{font-size:13px;}
+	a{color:#444;}
+	.no, .date, .work {
+		text-align:center;
+		padding:5px 0
+	}
+
+	tr.on {background-color: #f5fed0}
+
+	.lastmdate {color: #1155CC;}
+	.stand_by {color:#777;}
+	.ing, .per_2 {color:#4848D4 !important;}
+	.curr_n, .per, .end {color:#ff0000 !important;}
+
+	.division td{border-top:2px solid #7e8e9e}
+	table tr.division:first-child td{border-top:0 none;}
+	.date{display:none;}
+		table td.dd{background-color:#daf1ff}
+		span.ss{background-color:#cff3ef;display:block;padding:3px 5px;}
+
+</style>
+</head>
+<body>
+<div id="wrap" class="wrap">
+<!-- eniter wrap -->
+<div id="guide_wrap">
+	<div class="header">
+		<h1>작업 파일 목록</h1>
+		<p>진행중 : <span class="ing_n"></span>p / 미완료 : <span class="notcurr_n"></span>p / 완료 : <span class="curr_n"></span>p / 전체 : <span class="total_n"></span>p</p>
+		<p>진행율 : <span class="per_2"></span> / 완료율 : <span class="per"></span></p>
+	</div>
+
+	<div class="list_w">
+		<table class="codinglist">
+			<colgroup>
+				<col style="width:40px">
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col style="width:50px">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th rowspan="2">no.</th>
+					<th colspan="4">navi</th>
+					<th rowspan="2">filename/link</th>
+					<th rowspan="2">date</th>
+					<th rowspan="2">etc.</th>
+				</tr>
+				<tr>
+					<th class="lineli">1depth</th>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="no"></td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./main/main.html" target="_blank">main.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>회원가입</td>
+					<td>유형선택</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./member/join_type.html" target="_blank">join_type.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>약관동의</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./member/join_terms.html" target="_blank">join_terms.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>본인인증</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./member/join_certify.html" target="_blank">join_certify.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>가입폼</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./member/join_form.html" target="_blank">join_form.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>완료</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./member/join_complete.html" target="_blank">join_complete.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>사업소개</td>
+					<td>글로벌 의사과학자 양성사업</td>
+					<td>사업 개요</td>
+					<td></td>
+					<td class="link"><a href="./business/business.html" target="_blank">business.html</a></td>
+					<td class="date"></td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>의과학자 글로벌 연수 지원</td>
+					<td></td>
+					<td class="link"><a href="./business/.html" target="_blank">.html</a></td>
+					<td class="date"></td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>의사과학자 박사 후 연구 성장 지원</td>
+					<td></td>
+					<td class="link"><a href="./business/.html" target="_blank">.html</a></td>
+					<td class="date"></td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>의사과학자 글로벌 공동연구 지원</td>
+					<td></td>
+					<td class="link"><a href="./business/.html" target="_blank">.html</a></td>
+					<td class="date"></td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>융합형 의사과학자 양성 프로그램</td>
+					<td>프로그램 개요</td>
+					<td></td>
+					<td class="link"><a href="./business/.html" target="_blank">.html</a></td>
+					<td class="date"></td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>전일제 박사학위과정 지원</td>
+					<td></td>
+					<td class="link"><a href="./business/.html" target="_blank">.html</a></td>
+					<td class="date"></td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>바이오 메디컬 DB</td>
+					<td>의과학자 인재 검색</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./bio/bio_search.html" target="_blank">bio_search.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>의과학자 인재 등록 관리</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./bio/bio_register.html" target="_blank">bio_register.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td class="link"><a href="./bio/bio_detail.html" target="_blank">bio_detail.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>바이오 메디컬 구인 정보</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./bio/bio_recruit.html" target="_blank">bio_recruit.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>글로벌 인재육성</td>
+					<td>보고서 작성 및 제출 관리</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./development/submission_list.html" target="_blank">submission_list.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>커뮤니티</td>
+					<td>통합 공지사항</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./community/notice_list.html" target="_blank">notice_list.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td class="link"><a href="./community/notice_detail.html" target="_blank">notice_detail.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>뉴스레터</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./community/news_list.html" target="_blank">news_list.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td class="link"><a href="./community/news_detail.html" target="_blank">news_detail.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>영상 미디어</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./community/media_list.html" target="_blank">media_list.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>언론보도</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./community/report_list.html" target="_blank">report_list.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>FAQ</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./community/faq.html" target="_blank">faq.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>qna</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./community/qna.html" target="_blank">qna.html</a></td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					
+					<td class="etc"></td>
+				</tr>
+
+
+				<!-- 
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/.html" target="_blank"></a>.html</td>
+					<td class="date">2024-09-17</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				-->
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function () {
+		$(".tab_menu li a").click(function () {
+			$(".tab_menu li a").removeClass("active");
+			$(this).addClass("active");
+			$(".list_w").hide().removeClass("codinglist")
+			var activeTab = $(this).attr("rel");
+			$("#" + activeTab).fadeIn().addClass("codinglist");
+			chkList();
+		});
+		chkList();
+	});
+
+	function chkList(){
+		var tatal_n = $(".codinglist tbody tr").length;
+		var curr_n = 0;
+		var ing_n = 0;
+		$(".codinglist td a").each(function() {
+			$(this).closest('tr').find('.work').text('대기중').addClass('stand_by');
+			if($(this).attr('href') != '#' && $(this).text().length > 0 && $(this).closest('tr').find('.date').text().length > 4){
+				curr_n++;
+				$(this).closest('tr').find('.work').text('완료').addClass('end');
+			} else if ($(this).text().length > 0 && $(this).attr('href') != '#') {
+				ing_n++;
+				$(this).closest('tr').find('.work').text('진행중').addClass('ing');
+			}
+		});
+
+		$(".codinglist tbody tr").each(function() {
+			var index = $(this).index()+1;
+			$(this).children(".codinglist td.no").text(index);
+		});
+		$(".codinglist .no + td").each(function() {
+			if($(this).text() != ""){
+				$(this).parent('tr').addClass('division');
+			}
+		});
+
+		$(".codinglist td").click(function() {
+			$(".codinglist tr").removeClass("on");
+			$(this).parent(".codinglist tr").addClass("on");
+		});
+
+		$('.total_n').text(tatal_n);
+		$('.curr_n').text(curr_n);
+		$('.notcurr_n').text(tatal_n - curr_n);
+		$('.ing_n').text(ing_n).addClass('ing');
+		$('.per').text(Math.floor((curr_n/tatal_n)*100) + '%');
+		$('.per_2').text(Math.floor((ing_n/tatal_n)*100) + '%');
+	}
+</script>
+</div><!-- //wrap -->
+</body>
+</html>

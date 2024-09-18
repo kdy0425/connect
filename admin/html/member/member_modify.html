@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>CONNECT 관리자</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/toastify.min.css" />
+<link href="../../assets/css/pikaday.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/pikaday.js"></script>
+<script src="../../assets/js/inputmask.js"></script>
+<script src="../../assets/js/toastify-js.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">CONNECT 관리자</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="aside">
+        <script>
+            //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
+            const menuState = getCookie('menuState');
+            const asideElement = document.getElementById('aside');
+            if (menuState === 'open') {
+                asideElement.classList.add('active');
+            }
+        </script>
+		<div id="logo">
+            <a href="../main/main.html" class="large"><img src="../../assets/images/hd_logo.svg" alt="CONNECT 관리자"></a>
+            <a href="../main/main.html" class="small"><img src="../../assets/images/hd_logo_small.svg" alt="CONNECT 관리자"></a>
+        </div>
+        <div id="nav">
+            <ul>
+                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_home.svg" class="nav_icon"><span>HOME 화면 관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메인 배너 관리</a></li> 
+                        <li><a href="javascript:;" class="active">메인 팝업 관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_member.svg" class="nav_icon"><span>회원관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_db.svg" class="nav_icon"><span>바이오메디컬 DB</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_development.svg" class="nav_icon"><span>글로벌 인재육성</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_community.svg" class="nav_icon"><span>커뮤니티 관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_admin.svg" class="nav_icon"><span>운영자 관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+	</div>
+	<!-- //header -->	
+
+    <div id="content_wrap">
+        <div id="header">
+            <div class="l">
+                <button id="menu_toggle" type="button" onclick="asideActive();">메뉴열기</button>
+                <script>
+                    //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
+                    const menuToggle = document.getElementById('menu_toggle');
+                    if (menuState === 'open') {
+                        menuToggle.classList.add('active');
+                    }
+
+                    //메뉴 토글 & 쿠키저장
+                    function asideActive(){
+                        const menuToggle = document.getElementById('menu_toggle');
+                        const asideElement = document.getElementById('aside');
+
+                        //메뉴 닫기
+                        if(menuToggle.classList.contains('active')){
+                            menuToggle.classList.remove('active');
+                            asideElement.classList.remove('active');
+                            setCookie('menuState', 'closed', 0);//쿠키저장
+                        }else{//메뉴 열기
+                            menuToggle.classList.add('active');
+                            asideElement.classList.add('active');
+                            setCookie('menuState', 'open', 0); //쿠키저장
+                        }
+                    }
+                </script>
+            </div>
+            <div class="r">
+                <div class="header_links">
+                    <div class="item"><a href="../login/login.html" class="logout"><img src="../../assets/images/header_icon_logout.svg" class="header_icon"><span>로그아웃</span></a></div>
+                    <div class="item"><a href="javascript:;" class="password"><img src="../../assets/images/header_icon_member.svg" class="header_icon"><span>개인정보수정</span></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div id="content">
+            <div class="page_title">
+                <div>
+                    <div class="page_history">
+                        <span class="item">Home</span>
+                        <span class="item">회원관리</span>
+                        <span class="item">회원 정보 조회</span>
+                    </div>
+                    <h2>회원 정보 수정</h2>
+                </div>
+            </div>
+            <div class="page">
+                <form action="">
+                <div class="form_table">
+                    <div class="form_title">
+                        <h3>회원 기본 정보</h3>
+                    </div>
+                    <table>
+                        <colgroup> 
+                            <col style="width:200px;">
+                            <col style="width:calc(50% - 200px);">
+                            <col style="width:200px;">
+                            <col style="width:calc(50% - 200px);">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>회원 ID</th>
+                                <td>abcd1234</td>
+                                <th>이름</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>생년월일</th>
+                                <td>1989-12-12</td>
+                                <th>이메일(E-mail)</th>
+                                <td>
+                                    <div class="input_group">
+                                        <div class="input"><input type="text" value="abcd@trionsoft.com"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>010-1234-5678</td>
+                                <th>기타 연락처</th>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td colspan="3">
+                                    <div class="input_group">
+                                        <div class="input" style="max-width:55.8rem;"><input type="text" value="012345 서울 강남구 강남대로" id="adsInput" readonly onclick="openLayer('#address_layer');sample2_execDaumPostcode();"></div>
+                                    </div>
+                                    <div class="input_group">
+                                        <div class="input" style="max-width:55.8rem;"><input type="text" id="adsDetailInput"></div>
+                                        <button class="btn btn_md btn_lblue" type="button" onclick="openLayer('#address_layer');sample2_execDaumPostcode();">주소검색</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>회원유형</th>
+                                <td colspan="3">일반회원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="form_table">
+                    <div class="form_title">
+                        <h3>기관 관련 파일</h3>
+                    </div>
+                    <table>
+                        <colgroup> 
+                            <col style="width:200px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>파일 업로드</th>
+                                <td colspan="3">
+                                    <label class="btn btn_md btn_lblue file_label">
+                                        <!-- 추가된 파일들 input file multiple로 저장 -->
+                                        <input type="file" class="file_input" file-type="pdf hwp doc docx xls xlsx ppt ptx txt png jpg jpeg gif" multiple>
+                                        <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6h8M6 10V2" stroke="#378FD7" stroke-width="2" stroke-linecap="round"/></svg>
+                                        파일 추가
+                                    </label>
+                                    <div class="add_list add_files" style="display:none;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>홈페이지 URL 링크</th>
+                                <td colspan="3">
+                                    <button class="btn btn_md btn_lblue url_label" type="button">
+                                        <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6h8M6 10V2" stroke="#378FD7" stroke-width="2" stroke-linecap="round"/></svg>
+                                        링크 추가
+                                    </button>
+                                    <div class="add_list add_links" style="display:none;">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="r btn_list">
+                        <button type="button" class="btn btn_md btn_line">비밀번호 초기화</button>
+                        <button type="button" class="btn btn_md btn_sline">수정</button>
+                        <button type="button" class="btn btn_md btn_blue">목록</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+</div>
+
+
+<!-- 주소 -->
+<div id="address_layer" class="layer_popup">
+    <div class="layer_box design_scroll" style="max-width:54rem;width:auto;">
+        <div class="layer_header">
+            <div class="layer_title">주소검색</div>
+            <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div id="daumAdressLayer">
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg" onclick="closeLayer(this)"></span>
+</div>
+<!-- //주소 -->
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+//주소 api
+var element_layer = document.getElementById('daumAdressLayer');
+function sample2_execDaumPostcode() {
+    new daum.Postcode({
+        oncomplete: function(data) {
+            var addr = ''; // 주소 변수
+            var extraAddr = ''; // 참고항목 변수
+            if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                addr = data.roadAddress;
+            } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                addr = data.jibunAddress;
+            }
+            if(data.userSelectedType === 'R'){
+                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                    extraAddr += data.bname;
+                }
+                if(data.buildingName !== '' && data.apartment === 'Y'){
+                    extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                }
+                if(extraAddr !== ''){
+                    extraAddr = ' (' + extraAddr + ')';
+                }
+            }
+            document.querySelector('#adsInput').value = data.zonecode + ' ' + addr;
+            document.querySelector("#adsDetailInput").focus();
+            document.querySelector("#address_layer").style.display = 'none';
+        },
+        width : '500px',
+        height : '500px',
+        maxSuggestItems : 5
+    }).embed(element_layer);
+}
+</script>
+
+</body>
+</html>	 

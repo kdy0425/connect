@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+        // 상단 바
+        "titleBar.activeBackground": "#008900",
+        "titleBar.inactiveBackground": "#025102",
+        
+        //하단 바
+        "statusBar.background" : "#008900",
+    	"statusBar.noFolderBackground" : "#008900",
+    	"statusBar.debuggingBackground": "#008900"
+    }
+}

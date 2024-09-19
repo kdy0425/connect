@@ -212,8 +212,18 @@
                     <div class="search_content">
                         <div class="search_inner">
                             <form action="">
+                                <div class="custom_select">
+                                    <input type="hidden">
+                                    <button type="button" class="select_selected" onclick="customSelect(this)">전체</button>
+                                    <div class="options design_scroll" data-simplebar>
+                                        <div class="item"><a href="javascript:;" data-id="서울" class="active" onclick="customSelectSelect(this);">전체</a></div>
+                                        <div class="item"><a href="javascript:;" data-id="경기"  onclick="customSelectSelect(this);">옵션명1</a></div>
+                                        <div class="item"><a href="javascript:;" data-id="부산"  onclick="customSelectSelect(this);">옵션명2</a></div>
+                                        <div class="item"><a href="javascript:;" data-id="대구"  onclick="customSelectSelect(this);">옵션명3</a></div>
+                                    </div>
+                                </div>
                                 <input type="text" placeholder="검색어를 입력하세요.">
-                                <button type="button">검색</button>
+                                <button type="button" class="search_submit">검색</button>
                             </form>
                         </div>
                     </div>
@@ -382,7 +392,7 @@
 
     <!-- content -->
     <div id="content" class="main_content">
-        <div class="container_lg">
+        <div class="container_xl">
             <div class="main_visual_wrap">
                 <!-- 메인 배너 슬라이드 -->
                 <div class="main_visual_slider">
@@ -473,7 +483,7 @@
         </div>
 
         <div class="main_lastest">
-            <div class="container_lg">
+            <div class="container_xl">
                 <div class="main_title">
                     <div class="title_box">
                         <h2>NOTICE & NEWS</h2>
@@ -548,7 +558,7 @@
         </div>
 
         <div class="main_faq">
-            <div class="container_lg">
+            <div class="container_xl">
                 <div class="main_title">
                     <div class="title_box">
                         <h2>FAQ</h2>
@@ -592,7 +602,7 @@
     <!-- footer -->
     <div id="footer">
         <div class="ft_top">
-            <div class="container_lg">
+            <div class="container_xl">
                 <div class="ft_logo_mobile">
                     <img src="../../assets/common/images/logo.svg" alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS">
                 </div>
@@ -618,7 +628,7 @@
             </div>
         </div>
         <div class="ft_bottom">
-            <div class="container_lg">
+            <div class="container_xl">
                 <div class="ft_links">
                     <div class="item"><a href="javascript:;"><strong>개인정보처리방침</strong></a></div>
                     <div class="item"><a href="javascript:;">이용약관</a></div>

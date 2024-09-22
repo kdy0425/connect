@@ -14,12 +14,14 @@
     <link href="../../assets/css/swiper.min.css" rel="stylesheet"/>
     <link href="../../assets/css/slick.css" rel="stylesheet"/>
     <link href="../../assets/css/simplebar.css" rel="stylesheet"/>
+    <link href="../../assets/css/pikaday.css" rel="stylesheet"/>
     <script src="../../assets/js/jquery-3.7.1.min.js"></script>
     <script src="../../assets/js/jquery-ui.js"></script>
     <script src="../../assets/js/swiper.min.js"></script>
     <script src="../../assets/js/slick.min.js"></script>
     <script src="../../assets/js/litepicker.js"></script>
     <script src="../../assets/js/simplebar.min.js"></script>
+    <script src="../../assets/js/pikaday.js"></script>
 </head>
 <body>
 
@@ -69,38 +71,25 @@
     <div class="location">
         <div class="items">
             <div class="item"><a href="javascript:;" class="home">HOME</a></div>
-            <div class="item"><a href="javascript:;">커뮤니티</a></div>
-            <div class="item"><a href="javascript:;">소식</a></div>
-            <div class="item"><a href="javascript:;">Q&A</a></div>
+            <div class="item"><a href="javascript:;">마이페이지</a></div>
+            <div class="item"><a href="javascript:;">개인정보 변경</a></div>
         </div>
     </div>
 
     <div id="aside_wrap">
         <div id="aside">
-            <h2>커뮤니티</h2>
+            <h2>마이페이지</h2>
             <div class="aside_nav">
                 <ul>
-                    <li class="item">
-                        <button type="button">소식</button>
-                        <ul>
-                            <li><a href="javascript:;">통합 공지사항</a></li>
-                            <li><a href="javascript:;">뉴스레터</a></li>
-                            <li><a href="javascript:;">언론보도</a></li>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <button type="button">자료실</button>
-                        <ul>
-                            <li><a href="javascript:;">통합 자료실</a></li>
-                            <li><a href="javascript:;">영상 미디어</a></li>
-                        </ul>
-                    </li>
                     <li class="item active">
-                        <button type="button">정보마당</button>
+                        <button type="button">마이페이지</button>
                         <ul style="display: block;">
-                            <li><a href="javascript:;">FAQ</a></li>
-                            <li><a href="javascript:;" class="active">Q&A</a></li>
-                            <li><a href="javascript:;">설문 현황</a></li>
+                            <li><a href="javascript:;" class="active">개인정보 변경</a></li>
+                            <li><a href="javascript:;">회원 전환 신청</a></li>
+                            <li><a href="javascript:;">소속 회원 관리</a></li>
+                            <li><a href="javascript:;">나의 DB 관리</a></li>
+                            <li><a href="javascript:;">Q&A</a></li>
+                            <li><a href="javascript:;">회원탈퇴</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -110,98 +99,35 @@
         <!-- content -->
         <div id="content">
             <div class="aw_title">
-                <h3>Q&A</h3>
-                <div class="r btn_list">
-                    <a href="javascript:;" class="btn btn_line"><span class="arrow">내 문의글 보기</span></a>
-                </div>
+                <h3>개인정보 변경</h3>
             </div>
 
             <form action="">
-                <div class="form form_type2">
-                    <div class="form_content">
-                        <div class="form_item">
-                            <div class="form_label"><span class="required">*</span>문의유형<span class="sub">(복수 선택 가능)</span></div>
-                            <div class="content">
-                                <div class="check_list">
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>사업(RFP)</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>의과학자 인재 DB</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>해외연수원(연구비/이지바로)</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>해외연수자(연구비 외)</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>기타</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item">
-                            <div class="form_label"><span class="required">*</span>문의 요청 기관<span class="sub">(복수 선택 가능)</span></div>
-                            <div class="content">
-                                <div class="check_list">
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>한국보건산업진흥원</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>KAMC</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item">
-                            <div class="form_label"><span class="required">*</span>이메일 회신 여부<span class="sub">(선택 시 이메일로 답변이 추가 발송)</span></div>
-                            <div class="content">
-                                <div class="check_list">
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>이메일로 회신 받기</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item size_xl">
-                            <div class="form_label"><span class="required">*</span>풀사이즈 예시용 항목</div>
-                            <div class="content">
-                                <div class="check_list">
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목1</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목2</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목3</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목4</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목5</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목6</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목7</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목8</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목9</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목10</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목1</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목2</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목3</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tip_box">
+                    <div class="tip_badge">TIP</div>
+                    <div class="tip_cnt">회원님의 개인정보를 안전하게 보호하기 위해 인증 후 변경이 가능합니다.</div>
                 </div>
 
-                <div class="form form_type1">
-                    <div class="form_title">
-                        <h3>문의글 작성하기</h3>
-                    </div>
+                <div class="form form_type1 n_border">
                     <div class="form_content">
-                        <div class="form_item size_xl">
-                            <div class="form_label"><span class="required">*</span>이름</div>
+                        <div class="form_item">
+                            <div class="form_label">아이디</div>
                             <div class="content">
                                 <div class="input_group">
                                     <div class="input">
-                                        <input type="text" value="관리자" readonly>
+                                        <input type="text" value="kcfms2024" readonly>
                                     </div>
                                 </div>
+                                <small class="error">아이디는 변경이 불가한 항목입니다.</small>
                             </div>
                         </div>
-                        <div class="form_item size_xl">
-                            <div class="form_label"><span class="required">*</span>문의 제목</div>
+                        <div class="form_item">
+                            <div class="form_label">비밀번호</div>
                             <div class="content">
                                 <div class="input_group">
                                     <div class="input">
-                                        <input type="text" placeholder="문의할 내용에 대한 제목을 입력해 주세요.">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item size_xl">
-                            <div class="form_label"><span class="required">*</span>문의내용</div>
-                            <div class="content">
-                                <div class="input_group">
-                                    <div class="input">
-                                        <textarea name="" id="" placeholder="문의하실 내용을 입력해 주세요."></textarea>
+                                        <input type="password" placeholder="비밀번호">
+                                        <button type="button" class="btn_password_toggle">비밀번호 보기</button>
                                     </div>
                                 </div>
                             </div>
@@ -209,8 +135,8 @@
                     </div>
                 </div>
 
-                <div class="form_btns">
-                    <button type="button" class="btn btn_submit">제출하기</button>
+                <div class="form_btns margin5">
+                    <button type="button" class="btn btn_submit">확인</button>
                 </div>
             </form>
 
@@ -287,6 +213,5 @@
 </div>
 
 <script src="../../assets/js/common.js"></script>
-
 </body>
 </html>

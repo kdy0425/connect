@@ -61,6 +61,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .sound_only {display: inline-block !important;position: absolute;top: 0;left: 0;margin: 0 !important;padding: 0 !important;font-size: 0;line-height: 0;border: 0 !important;overflow: hidden !important}
 .mobile{display:none;}
 
+.w_100{width:100% !important;}
+
 #skip_to_container a {z-index:100000;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden}
 #skip_to_container a:focus, #skip_to_container a:active {width:100%;height:75px;background:#21272e;color:#fff;font-size:2em;font-weight:bold;text-align:center;text-decoration:none;line-height:3.3em}
 
@@ -115,7 +117,8 @@ html .simplebar-horizontal .simplebar-scrollbar:before {background-color: rgba(0
 .checkbox.radio_type1 input:disabled + .ck_icon{border-color:rgba(67, 72, 89, 0.2);background-color: rgba(246, 248, 251, 1);}
 .checkbox.radio_type1 input:disabled:checked + .ck_icon{background-image: url("data:image/svg+xml,%0A%3Csvg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='10' height='10' rx='5' fill='%23AAAEB6'/%3E%3C/svg%3E");}
 .checkbox.radio_type1.single{padding-left:2rem;}
-
+.checkbox strong{font-weight:400;}
+.checkbox input:checked + .ck_icon + strong{color:rgba(17, 27, 61, 1);font-weight:400;}
 .tap_radio{display: flex;}
 .tap_radio label{flex:1 1;position: relative;overflow: hidden;cursor: pointer;white-space: nowrap;}
 .tap_radio label input{position: absolute;left:-999em;}
@@ -151,6 +154,7 @@ html .is-today .pika-button{color:#378FD7;}
   .checkbox.radio_type1 .ck_icon{width:1.8rem;height:1.8rem;background-size: 0.8rem;}
   .checkbox.radio_type1.single{padding-left:1.8rem;}
 
+  .tap_radio{width:100%;}
   .tap_radio label{white-space: normal;}
   .tap_radio label span{font-size:1.3rem;padding:0.8rem 1rem;}
 }

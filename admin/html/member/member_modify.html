@@ -242,6 +242,84 @@
                                     </div>
                                 </td>
                             </tr>
+                            <tr>
+                                <th>회원 ID</th>
+                                <td colspan="3">
+                                    <button class="btn btn_md btn_lblue" type="button" onclick="openLayer('#member_search');">
+                                        회원 검색
+                                    </button>
+                                    <div class="add_list add_texts inline" style="display:;">
+                                        <div class="file_item">
+                                            <div class="file_name">abdc1234</div>
+                                            <button type="button" class="file_remove">삭제</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>라디오 스타일</th>
+                                <td colspan="3">
+                                    <div class="check_list">
+                                        <label class="checkbox">
+                                            <input type="radio" name="radio">
+                                            <span class="ck_icon"></span>
+                                            <strong>기업</strong>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="radio" name="radio">
+                                            <span class="ck_icon"></span>
+                                            <strong>연구소</strong>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="radio" name="radio">
+                                            <span class="ck_icon"></span>
+                                            <strong>병원</strong>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="radio" name="radio">
+                                            <span class="ck_icon"></span>
+                                            <strong>대학교</strong>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>체크박스 스타일</th>
+                                <td colspan="3">
+                                    <div class="check_list">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="ck_icon"></span>
+                                            <strong>융합형 의사과학자 전주기 지원 프로그램</strong>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="ck_icon"></span>
+                                            <strong>현장수요 연계형 글로벌 인재육성 지원사업</strong>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="ck_icon"></span>
+                                            <strong>융합형 의과학자 학부과정 지원</strong>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="ck_icon"></span>
+                                            <strong>전공의 연구지원</strong>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="ck_icon"></span>
+                                            <strong>전일제 박사학위과정 지원</strong>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="ck_icon"></span>
+                                            <strong>신진의사과학자 양성 지원</strong>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -260,6 +338,72 @@
     </div>
 </div>
 
+
+
+<!-- 회원검색 -->
+<div id="member_search" class="layer_popup">
+    <div class="layer_box design_scroll" style="max-width:40rem;width:40rem;">
+        <div class="layer_header">
+            <div class="layer_title">회원검색</div>
+            <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="ly_search">
+                <form action="">
+                    <div class="input_group">
+                        <div class="input"><input type="text" placeholder="회원 아이디를 입력하세요."><button type="button" class="btn_search">검색</button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="item_list" data-simplebar>
+                <div class="item list_empty">검색된 내용이 없습니다.</div>
+                <div class="item">
+                    <div class="cnt">abcd1234</div>
+                    <div class="btns">
+                        <button type="button" class="btn btn_sline btn_md">선택됨</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cnt">abcd1234</div>
+                    <div class="btns">
+                        <button type="button" class="btn btn_line btn_md">선택</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cnt">abcd1234</div>
+                    <div class="btns">
+                        <button type="button" class="btn btn_line btn_md">선택</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cnt">abcd1234</div>
+                    <div class="btns">
+                        <button type="button" class="btn btn_line btn_md">선택</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cnt">abcd1234</div>
+                    <div class="btns">
+                        <button type="button" class="btn btn_line btn_md">선택</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cnt">abcd1234</div>
+                    <div class="btns">
+                        <button type="button" class="btn btn_line btn_md">선택</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_btns center">
+                <div class="btn_list">
+                    <button type="button" class="btn btn_lg btn_blue">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg" onclick="closeLayer(this)"></span>
+</div>
+<!-- //회원검색 -->
 
 <!-- 주소 -->
 <div id="address_layer" class="layer_popup">

@@ -74,7 +74,8 @@
                 </li>
                 <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_db.svg" class="nav_icon"><span>바이오메디컬 DB</span></a>
                     <ul>
-                        <li><a href="javascript:;" class="active">의과학자 인재 관리</a></li>
+                        <li><a href="javascript:;">의과학자 인재 관리</a></li>
+                        <li><a href="javascript:;" class="active">바이오메디컬 DB 기관 관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_development.svg" class="nav_icon"><span>글로벌 인재육성</span></a>
@@ -146,15 +147,15 @@
                     <div class="page_history">
                         <span class="item">Home</span>
                         <span class="item">바이오메디컬 DB</span>
-                        <span class="item">바이오인재 관리</span>
+                        <span class="item">바이오메디컬 DB 기관 관리</span>
                     </div>
-                    <h2>의과학자 인재 관리</h2>
+                    <h2>바이오메디컬 DB 기관 관리</h2>
                 </div>
                 <div class="r">
                     <div class="btn_list">
                         <a href="javascript:;" class="btn btn_md btn_dblue">
                             <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6h8M6 10V2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
-                            인재등록
+                            기관 등록
                         </a>
                     </div>
                 </div>
@@ -195,7 +196,7 @@
                 </div>
                 <div class="table_wrap">
                     <div class="list_top">
-                        <div class="caption">총 등록 의과학자 <strong>521</strong>개</div>
+                        <div class="caption">바이오메디컬 DB 기관 목록 <span class="sub">총 등록 바이오 메디컬 기관 <strong>79</strong>개</span></div>
                         <div class="r">
                             <div class="item">
                                 <select name="" id="" style="width: 11rem;">
@@ -210,23 +211,37 @@
                                     선택 Office 파일 다운로드
                                 </button>
                             </div>
+                            <div class="item">
+                                <button class="btn btn_md btn_lblue" type="button">
+                                    PUSH 이메일 전송
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="table_list label_control">
                         <table>
+                            <colgroup>
+                                <col style="width:6rem;max-width:6rem;">
+                                <col style="width:8rem;max-width:8rem;">
+                                <col style="width:11.2rem;max-width:11.2rem;">
+                                <col>
+                                <col style="width:14.4rem;max-width:14.4rem;">
+                                <col style="width:16.4rem;max-width:16.4rem;">
+                                <col style="width:16.4rem;max-width:16.4rem;">
+                                <col style="width:8rem;max-width:8rem;">
+                            </colgroup>
                             <thead>
                                 <tr>
-                                    <th style="width:6rem;max-width:6rem;">
+                                    <th>
                                         <label class="checkbox single"><input type="checkbox" class="check_all"><span class="ck_icon"></span></label>
                                     </th>
                                     <th>NO</th>
-                                    <th>이름</th>
-                                    <th>이메일</th>
-                                    <th>전공</th>
-                                    <th>노출여부</th>
-                                    <th>총 경력기간</th>
-                                    <th style="min-width:8rem;">수정</th>
-                                    <th style="min-width:8rem;">삭제</th>
+                                    <th>기업 로고</th>
+                                    <th>기업명</th>
+                                    <th>기업유형</th>
+                                    <th>승인 상태</th>
+                                    <th>승인 상태 변경</th>
+                                    <th>수정</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -235,16 +250,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge green">승인완료</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -252,16 +272,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge gray">승인대기중</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -269,16 +294,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>연수기관</td>
+                                    <td><span class="badge red">반려처리</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_line">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -286,16 +316,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge green">승인완료</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -303,16 +338,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge green">승인완료</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -320,16 +360,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge green">승인완료</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -337,16 +382,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge green">승인완료</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -354,16 +404,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge green">승인완료</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -371,16 +426,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge green">승인완료</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -388,16 +448,21 @@
                                         <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
                                     </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <div class="preview_img">
+                                            <img src="../../assets/images/login_bg.jpg">
+                                            <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
+                                        </div>
+                                    </td>
+                                    <td class="align_left">Center for Definitive and Curative Medicine/Pediatrics(Stanford Univ.)</td>
+                                    <td>협력기관</td>
+                                    <td><span class="badge green">승인완료</span></td>
+                                    <td>
+                                        <button class="btn btn_md btn_gray2">반려</button>
+                                        <button class="btn btn_md btn_line">승인</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -437,6 +502,26 @@
     </div>
 </div>
 
+<!-- 이미지 미리보기 -->
+<div id="preview_image" class="layer_popup">
+    <div class="layer_box design_scroll" style="max-width:90%;width:auto;">
+        <div class="layer_header">
+            <div class="layer_title">이미지 미리보기</div>
+            <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <img src="../../assets/images/thum1.jpg" id="preview_image_element">
+        </div>
+    </div>
+    <span class="layer_bg" onclick="closeLayer(this)"></span>
+</div>
+<!-- //이미지 미리보기 -->
+<script>
+function previewImage(button){
+    const imgSrc = button.closest('.preview_img').querySelector('img').getAttribute('src');
+    document.getElementById('preview_image_element').setAttribute('src', imgSrc);
+}
+</script>
 
 </body>
 </html>	 

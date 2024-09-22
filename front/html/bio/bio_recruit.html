@@ -47,12 +47,12 @@
                         <a href="javascript:;">EN</a>
                     </div>
                 </div>
-                <div class="hd_login">
-                    <a href="javascript:;" class="background">로그인</a>
+                <div class="hd_link">
+                    <a href="javascript:;" class="background">회원가입</a>
+                </div><div class="hd_link">
+                    <a href="javascript:;" class="icon login">로그인</a>
                 </div>
-                <!-- <div class="hd_login">
-                    <a href="javascript:;" class="line">마이페이지</a>
-                </div> -->
+
                 <div class="hd_search">
                     <button type="button" class="search_btn search_open">검색 열기</button>
                     <button type="button" class="search_btn hd_btn_close">검색 닫기</button>
@@ -114,6 +114,26 @@
             </div>
 
             <div class="board_list">
+
+                <div class="board_search">
+                    <form action="">
+                        <div class="custom_select">
+                            <input type="hidden">
+                            <button type="button" class="select_selected" onclick="customSelect(this)">전체</button>
+                            <div class="options design_scroll" data-simplebar>
+                                <div class="item"><a href="javascript:;" data-id="" class="active" onclick="customSelectSelect(this)">전체</a></div>
+                                <div class="item"><a href="javascript:;" data-id="subject" onclick="customSelectSelect(this)">제목</a></div>
+                                <div class="item"><a href="javascript:;" data-id="content" onclick="customSelectSelect(this)">내용</a></div>
+                                <div class="item"><a href="javascript:;" data-id="subject||content" onclick="customSelectSelect(this)">제목+내용</a></div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                            <button type="button">검색</button>
+                        </div>
+                    </form>
+                </div>
+                
                 <div class="row_content">
                     <div class="item">
                         <a href="javascript:;">

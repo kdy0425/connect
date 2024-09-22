@@ -876,3 +876,30 @@ function showToast(type, msg, duration) {
     toastOptions.text = msg;
     Toastify(toastOptions).showToast();
 }
+
+//마우스오버 레이어 화면 밖으로 나가는거 제어 
+document.addEventListener('DOMContentLoaded', () => {
+    const hoverBoxes = document.querySelectorAll('.hover_box');
+    hoverBoxes.forEach(box => {
+        const hoverCnt = box.querySelector('.hover_cnt');
+
+        box.addEventListener('mouseenter', () => {
+            const boxRect = box.getBoundingClientRect();
+            const hoverCntRect = hoverCnt.getBoundingClientRect();
+            box.classList.remove('right', 'left', 'bottom', 'top');
+
+            if (boxRect.right + hoverCntRect.width > window.innerWidth) {
+                box.classList.add('right');
+            }
+            else if (boxRect.left - hoverCntRect.width < 0) {
+                box.classList.add('left');
+            }
+            if (boxRect.bottom + hoverCntRect.height > window.innerHeight) {
+                box.classList.add('bottom');
+            }
+            else if (boxRect.top - hoverCntRect.height < 0) {
+                box.classList.add('top');
+            }
+        });
+    });
+});

@@ -82,13 +82,11 @@
                         <li class="item active">
                             <button type="button">마이페이지</button>
                             <ul style="display: block;">
-                                <li><a href="javascript:;">개인정보 변경</a></li>
-                                <li><a href="javascript:;">나의 인재 DB 등록 상태보기</a></li>
-                                <li><a href="javascript:;">연수 실적 보고서 작성 및 제출 관리</a></li>
-                                <li><a href="javascript:;">출입국 보고서 작성 및 제출 관리</a></li>
-                                <li><a href="javascript:;">연수 현황</a></li>
+                                <li><a href="javascript:;" >개인정보 변경</a></li>
+                                <li><a href="javascript:;">회원 전환 신청</a></li>
+                                <li><a href="javascript:;">소속 회원 관리</a></li>
+                                <li><a href="javascript:;">나의 DB 관리</a></li>
                                 <li><a href="javascript:;" class="active">Q&A</a></li>
-                                <li><a href="javascript:;">나의 커뮤니티 게시글 관리</a></li>
                                 <li><a href="javascript:;">회원탈퇴</a></li>
                             </ul>
                         </li>
@@ -106,37 +104,43 @@
             </div>
 
             <div class="board_list">
+
+                <div class="board_search">
+                    <form action="">
+                        <div class="custom_select">
+                            <input type="hidden">
+                            <button type="button" class="select_selected" onclick="customSelect(this)">전체</button>
+                            <div class="options design_scroll" data-simplebar>
+                                <div class="item"><a href="javascript:;" data-id="" class="active" onclick="customSelectSelect(this)">전체</a></div>
+                                <div class="item"><a href="javascript:;" data-id="subject" onclick="customSelectSelect(this)">제목</a></div>
+                                <div class="item"><a href="javascript:;" data-id="content" onclick="customSelectSelect(this)">내용</a></div>
+                                <div class="item"><a href="javascript:;" data-id="subject||content" onclick="customSelectSelect(this)">제목+내용</a></div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                            <button type="button">검색</button>
+                        </div>
+                    </form>
+                </div>
+
                 <div class="bl_top">
                     <div>
-                        <div class="btn_list">
-                            <button type="button" class="btn btn_submit">스타일01</button>
-                            <button type="button" class="btn btn_line">스타일02</button>
-                            <button type="button" class="btn btn_blue">스타일03</button>
-                            <button type="button" class="btn btn_gline">스타일04</button>
-                            <button type="button" class="btn">스타일05</button>
+                        <div class="tap_text">
+                            <div class="item">
+                                <button type="button" class="active">전체글</button>
+                            </div>
+                            <div class="item">
+                                <button type="button">내가 쓴 게시글</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="r">
-                        <div class="box">
-                            <div class="custom_select">
-                                <input type="hidden">
-                                <button type="button" class="select_selected" onclick="customSelect(this)">전체</button>
-                                <div class="options design_scroll" data-simplebar>
-                                    <div class="item"><a href="javascript:;" data-id="" class="active">전체</a></div>
-                                    <div class="item"><a href="javascript:;" data-id="subject" >제목</a></div>
-                                    <div class="item"><a href="javascript:;" data-id="content" >내용</a></div>
-                                    <div class="item"><a href="javascript:;" data-id="subject||content" >제목+내용</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="bl_search">
-                                <form action="">
-                                    <input type="text" placeholder="검색어를 입력하세요.">
-                                    <button type="button">검색</button>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="r btn_list mobile_inline">
+                        <button type="button" class="btn btn_submit">스타일01</button>
+                        <button type="button" class="btn btn_line">스타일02</button>
+                        <button type="button" class="btn btn_blue">스타일03</button>
+                        <button type="button" class="btn btn_gline">스타일04</button>
+                        <button type="button" class="btn">스타일05</button>
                     </div>
                 </div>
 

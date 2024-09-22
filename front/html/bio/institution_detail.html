@@ -69,38 +69,35 @@
     <div class="location">
         <div class="items">
             <div class="item"><a href="javascript:;" class="home">HOME</a></div>
-            <div class="item"><a href="javascript:;">커뮤니티</a></div>
-            <div class="item"><a href="javascript:;">소식</a></div>
-            <div class="item"><a href="javascript:;">Q&A</a></div>
+            <div class="item"><a href="javascript:;">바이오 메디컬 DB</a></div>
+            <div class="item"><a href="javascript:;">바이오 메디컬 기관 DB</a></div>
+            <div class="item"><a href="javascript:;">바이오 메디컬 기관 검색</a></div>
         </div>
     </div>
 
     <div id="aside_wrap">
         <div id="aside">
-            <h2>커뮤니티</h2>
+            <h2>바이오 메디컬 DB</h2>
             <div class="aside_nav">
                 <ul>
                     <li class="item">
-                        <button type="button">소식</button>
+                        <button type="button">의과학자 인재 DB</button>
                         <ul>
-                            <li><a href="javascript:;">통합 공지사항</a></li>
-                            <li><a href="javascript:;">뉴스레터</a></li>
-                            <li><a href="javascript:;">언론보도</a></li>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <button type="button">자료실</button>
-                        <ul>
-                            <li><a href="javascript:;">통합 자료실</a></li>
-                            <li><a href="javascript:;">영상 미디어</a></li>
+                            <li><a href="javascript:;">의과학자 인재 DB  구축 취지</a></li>
+                            <li><a href="javascript:;">의과학자 인재 검색</a></li>
+                            <li><a href="javascript:;">의과학자 인재 등록 관리</a></li>
                         </ul>
                     </li>
                     <li class="item active">
-                        <button type="button">정보마당</button>
+                        <button type="button">바이오 메디컬 기관 DB</button>
                         <ul style="display: block;">
-                            <li><a href="javascript:;">FAQ</a></li>
-                            <li><a href="javascript:;" class="active">Q&A</a></li>
-                            <li><a href="javascript:;">설문 현황</a></li>
+                            <li><a href="javascript:;" class="active">바이오 메디컬 기관 검색</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <button type="button">바이오 메디컬 인재 구인</button>
+                        <ul>
+                            <li><a href="javascript:;">바이오 메디컬 구인 정보</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -110,110 +107,63 @@
         <!-- content -->
         <div id="content">
             <div class="aw_title">
-                <h3>Q&A</h3>
-                <div class="r btn_list">
-                    <a href="javascript:;" class="btn btn_line"><span class="arrow">내 문의글 보기</span></a>
+                <h3>바이오 메디컬 기관 검색</h3>
+            </div>
+
+            <div class="institution_detail">
+                <div class="institution_visual" style="background-image: url('../../assets/images/dummy/institution_visual_bg.jpg');">
+                    <div class="institution_logo" style="background-image: url('../../assets/images/dummy/institution_visual_logo.jpg');"></div>
+                </div>
+
+                <div class="institution_cnt">
+                    <div class="title">
+                        <h4>St. Erik's Eye Hospital</h4>
+                        <span class="type">협력기관</span>
+                    </div>
+                    <div class="content">
+                        <div class="item hidden" id="item_hidden">
+                            <div class="tit">회사 소개</div>
+                            <div class="cnt">
+                                St. Erik Eye Hospital is one of the leading eye hospitals in Europe and the most comprehensive ophthalmic and vision research institution in Sweden. About 150,000 patients annually, from Stockholm County, Sweden and abroad, are treated here.
+                                St. Erik Eye Hospital is one of the leading eye hospitals in Europe and the most comprehensive ophthalmic and vision research institution in Sweden. About 150,000 patients annually, from Stockholm County, Sweden and abroad, are treated here.
+                                St. Erik Eye Hospital is one of the leading eye hospitals in Europe and the most comprehensive ophthalmic and vision research institution in Sweden. About 150,000 patients annually, from Stockholm County, Sweden and abroad, are treated here.
+                                St. Erik Eye Hospital is one of the leading eye hospitals in Europe and the most comprehensive ophthalmic and vision research institution in Sweden. About 150,000 patients annually, from Stockholm County, Sweden and abroad, are treated here.
+                            </div>
+                            <div class="more_btn" id="more_btn"><button class="btn" type="button" onclick="document.getElementById('item_hidden').classList.remove('hidden');document.getElementById('more_btn').remove();">더보기</button></div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">홈페이지</div>
+                            <div class="cnt"><a href="https://www.clipartkorea.co.kr/" target="_blank" class="link">https://www.clipartkorea.co.kr/</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">업계</div>
+                            <div class="cnt">병원</div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">규모</div>
+                            <div class="cnt">병원</div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">본사</div>
+                            <div class="cnt">S:t Eriks Ögonsjukhus, Eugeniavägen 12, 171 64 Solna S:t Eriks Ögonsjukhus, Eugeniavägen 12, 171 64 Solna (0)</div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">설립연도</div>
+                            <div class="cnt">2020-09-27</div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">전문분야</div>
+                            <div class="cnt">의료 안과</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <form action="">
-                <div class="form form_type2">
-                    <div class="form_content">
-                        <div class="form_item">
-                            <div class="form_label"><span class="required">*</span>문의유형<span class="sub">(복수 선택 가능)</span></div>
-                            <div class="content">
-                                <div class="check_list">
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>사업(RFP)</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>의과학자 인재 DB</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>해외연수원(연구비/이지바로)</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>해외연수자(연구비 외)</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>기타</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item">
-                            <div class="form_label"><span class="required">*</span>문의 요청 기관<span class="sub">(복수 선택 가능)</span></div>
-                            <div class="content">
-                                <div class="check_list">
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>한국보건산업진흥원</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>KAMC</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item">
-                            <div class="form_label"><span class="required">*</span>이메일 회신 여부<span class="sub">(선택 시 이메일로 답변이 추가 발송)</span></div>
-                            <div class="content">
-                                <div class="check_list">
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>이메일로 회신 받기</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item size_xl">
-                            <div class="form_label"><span class="required">*</span>풀사이즈 예시용 항목</div>
-                            <div class="content">
-                                <div class="check_list">
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목1</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목2</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목3</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목4</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목5</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목6</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목7</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목8</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목9</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목10</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목1</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목2</strong></label>
-                                    <label class="checkbox checkbox_type1"><input type="checkbox"><span class="ck_icon"></span><strong>예시용 항목3</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="bv_btns">
+                <div class="r btn_list">
+                    <a href="javascript:;" class="btn btn_line">목록보기</a>
                 </div>
-
-                <div class="form form_type1">
-                    <div class="form_title">
-                        <h3>문의글 작성하기</h3>
-                    </div>
-                    <div class="form_content">
-                        <div class="form_item size_xl">
-                            <div class="form_label"><span class="required">*</span>이름</div>
-                            <div class="content">
-                                <div class="input_group">
-                                    <div class="input">
-                                        <input type="text" value="관리자" readonly>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item size_xl">
-                            <div class="form_label"><span class="required">*</span>문의 제목</div>
-                            <div class="content">
-                                <div class="input_group">
-                                    <div class="input">
-                                        <input type="text" placeholder="문의할 내용에 대한 제목을 입력해 주세요.">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_item size_xl">
-                            <div class="form_label"><span class="required">*</span>문의내용</div>
-                            <div class="content">
-                                <div class="input_group">
-                                    <div class="input">
-                                        <textarea name="" id="" placeholder="문의하실 내용을 입력해 주세요."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form_btns">
-                    <button type="button" class="btn btn_submit">제출하기</button>
-                </div>
-            </form>
-
+            </div>
         </div>
         <!-- //content -->
     </div>

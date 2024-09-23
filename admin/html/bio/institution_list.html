@@ -44,13 +44,15 @@
 	<hr class="hide" />	
 
 	<!-- header -->
-	<div id="aside">
+	<div id="aside" class="active">
         <script>
             //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
             const menuState = getCookie('menuState');
             const asideElement = document.getElementById('aside');
             if (menuState === 'open') {
                 asideElement.classList.add('active');
+            }else if (menuState === 'closed') {
+                asideElement.classList.remove('active');
             }
         </script>
 		<div id="logo">
@@ -107,12 +109,14 @@
     <div id="content_wrap">
         <div id="header">
             <div class="l">
-                <button id="menu_toggle" type="button" onclick="asideActive();">메뉴열기</button>
+                <button id="menu_toggle" type="button" class="active" onclick="asideActive();">메뉴열기</button>
                 <script>
                     //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
                     const menuToggle = document.getElementById('menu_toggle');
                     if (menuState === 'open') {
                         menuToggle.classList.add('active');
+                    }else if (menuState === 'closed') {
+                        menuToggle.classList.remove('active');
                     }
 
                     //메뉴 토글 & 쿠키저장

@@ -30,7 +30,6 @@
 <script src="../../assets/js/pikaday.js"></script>
 <script src="../../assets/js/inputmask.js"></script>
 <script src="../../assets/js/toastify-js.js"></script>
-
 </head>
 <body>
 
@@ -62,9 +61,9 @@
         </div>
         <div id="nav">
             <ul>
-                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_home.svg" class="nav_icon"><span>HOME 화면 관리</span></a>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_home.svg" class="nav_icon"><span>HOME 화면 관리</span></a>
                     <ul>
-                        <li><a href="javascript:;" class="active">메인 배너 관리</a></li> 
+                        <li><a href="javascript:;">메인 배너 관리</a></li> 
                         <li><a href="javascript:;">메인 팝업 관리</a></li>
                     </ul>
                 </li>
@@ -87,11 +86,10 @@
                         <li><a href="javascript:;">메뉴명3</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_community.svg" class="nav_icon"><span>커뮤니티 관리</span></a>
+                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_community.svg" class="nav_icon"><span>커뮤니티 관리</span></a>
                     <ul>
-                        <li><a href="javascript:;">메뉴명1</a></li>
-                        <li><a href="javascript:;">메뉴명2</a></li>
-                        <li><a href="javascript:;">메뉴명3</a></li>
+                        <li><a href="javascript:;">뉴스레터 등록</a></li>
+                        <li><a href="javascript:;" class="active">설문 관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_admin.svg" class="nav_icon"><span>운영자 관리</span></a>
@@ -150,53 +148,85 @@
                 <div>
                     <div class="page_history">
                         <span class="item">Home</span>
-                        <span class="item">Home 화면 관리</span>
-                        <span class="item">메인 배너 관리</span>
+                        <span class="item">커뮤니티 관리</span>
+                        <span class="item">설문 관리</span>
                     </div>
-                    <h2>메인 배너 상세</h2>
+                    <h2>설문 현황 상세</h2>
                 </div>
             </div>
             <div class="page">
-                <div class="form_table">
-                    <div class="form_title">
-                        <h3>배너 상세</h3>
+
+                <div class="dot_info">
+                    <div class="info row">
+                        <div class="item">
+                            <div class="tit">설문 제목</div>
+                            <div class="cnt">의과학자 조사</div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">설문 내용</div>
+                            <div class="cnt">의과학자 연구분야 조사 질문에 대한 대답을 작성해주세요.</div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">설문 기간</div>
+                            <div class="cnt">2024-01-08 ~ 2024-01-31</div>
+                        </div>
                     </div>
-                    <table>
-                        <colgroup> 
-                            <col style="width:200px;">
-                            <col>
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>배너 이미지</th>
-                                <td>
-                                    <img src="../../assets/images/login_bg.jpg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>메인 문구</th>
-                                <td>
-                                    2024 글로벌 연수 지원을 위한 해외 연수
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>서브 문구</th>
-                                <td>해외 연수를 지원합니다.</td>
-                            </tr>
-                            <tr>
-                                <th>링크 URL</th>
-                                <td><a href="https://kcfms.kr/community/news/notice/detail/75" target="_blank" class="link">https://kcfms.kr/community/news/notice/detail/75</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                </div>
+
+                <div class="survey_wrap">
+                    <div class="survey_form">
+                        <div class="survey_form_inner">
+                            <div class="item">
+                                <div class="question"><span class="num">01</span><span class="subject">의과학자 커넥트 홈페이지에서 원하시는 정보에 접근이 편리합니까?</span></div>
+                                <div class="result_bar">
+                                    <div class="bar_item"><div class="tit">매우 그렇다</div><div class="per">60%</div><div class="bar"><span style="width:60%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">그렇다</div><div class="per">20%</div><div class="bar"><span style="width:20%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">보통</div><div class="per">10%</div><div class="bar"><span style="width:10%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">아쉬움</div><div class="per">5%</div><div class="bar"><span style="width:5%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">매우 아쉬움</div><div class="per">0%</div><div class="bar"><span style="width:0%"></span></div></div>
+                                </div>
+                            </div>
+    
+                            <div class="item">
+                                <div class="question"><span class="num">02</span><span class="subject">의과학자 커넥트 홈페이지의 메뉴명이 적절하다고 생각하십니까?</span></div>
+                                <div class="result_bar">
+                                    <div class="bar_item"><div class="tit">매우 그렇다</div><div class="per">60%</div><div class="bar"><span style="width:60%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">그렇다</div><div class="per">20%</div><div class="bar"><span style="width:20%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">보통</div><div class="per">10%</div><div class="bar"><span style="width:10%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">아쉬움</div><div class="per">5%</div><div class="bar"><span style="width:5%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">매우 아쉬움</div><div class="per">0%</div><div class="bar"><span style="width:0%"></span></div></div>
+                                </div>
+                            </div>
+    
+                            <div class="item">
+                                <div class="question"><span class="num">03</span><span class="subject">의과학자 커넥트 홈페이지의 메뉴명이 적절하다고 생각하십니까?</span></div>
+                                <div class="result_bar">
+                                    <div class="bar_item"><div class="tit">매우 그렇다</div><div class="per">60%</div><div class="bar"><span style="width:60%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">그렇다</div><div class="per">20%</div><div class="bar"><span style="width:20%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">보통</div><div class="per">10%</div><div class="bar"><span style="width:10%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">아쉬움</div><div class="per">5%</div><div class="bar"><span style="width:5%"></span></div></div>
+                                    <div class="bar_item"><div class="tit">매우 아쉬움</div><div class="per">0%</div><div class="bar"><span style="width:0%"></span></div></div>
+                                </div>
+                            </div>
+    
+                            <div class="item">
+                                <div class="question"><span class="num">04</span><span class="subject">의과학자 커넥트 홈페이지에 대한 의견을 작성해주세요.</span></div>
+                                <div class="result_text">
+                                    <div class="text_item">4분기에는 congenital cytomegalovirus infection의 위험을 평가하기 위한 cohort 구축을 진행하였습니다. 
+                                    본 연구에서 사용하는 Medicaid 자료는 신생아의 date of birth에 대한 기록이 있으나, Marketscan 자료는 신생아의 date of birth에 대한 기록이 없어 date of birth를 지정하는 방법론 적용부터 시작하였습니다. Live birth 진단 코드 활용</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
 
                 <div class="bottom_btns">
                     <div class="r btn_list">
-                        <button type="button" class="btn btn_md btn_line">수정</button>
-                        <button type="button" class="btn btn_md btn_blue">확인</button>
+                        <button type="button" class="btn btn_md btn_line">목록</button>
                     </div>
                 </div>
+
             </div>
         </div>
         <!-- //content -->
@@ -204,5 +234,26 @@
 </div>
 
 
+
+<!-- 이미지 미리보기 -->
+<div id="preview_image" class="layer_popup">
+    <div class="layer_box design_scroll" style="max-width:90%;width:auto;">
+        <div class="layer_header">
+            <div class="layer_title">이미지 미리보기</div>
+            <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <img src="../../assets/images/thum1.jpg" id="preview_image_element">
+        </div>
+    </div>
+    <span class="layer_bg" onclick="closeLayer(this)"></span>
+</div>
+<!-- //이미지 미리보기 -->
+<script>
+function previewImage(button){
+    const imgSrc = button.closest('.preview_img').querySelector('img').getAttribute('src');
+    document.getElementById('preview_image_element').setAttribute('src', imgSrc);
+}
+</script>
 </body>
 </html>	 

@@ -30,7 +30,6 @@
 <script src="../../assets/js/pikaday.js"></script>
 <script src="../../assets/js/inputmask.js"></script>
 <script src="../../assets/js/toastify-js.js"></script>
-
 </head>
 <body>
 
@@ -62,9 +61,9 @@
         </div>
         <div id="nav">
             <ul>
-                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_home.svg" class="nav_icon"><span>HOME 화면 관리</span></a>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_home.svg" class="nav_icon"><span>HOME 화면 관리</span></a>
                     <ul>
-                        <li><a href="javascript:;" class="active">메인 배너 관리</a></li> 
+                        <li><a href="javascript:;">메인 배너 관리</a></li> 
                         <li><a href="javascript:;">메인 팝업 관리</a></li>
                     </ul>
                 </li>
@@ -77,14 +76,15 @@
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_db.svg" class="nav_icon"><span>바이오메디컬 DB</span></a>
                     <ul>
-                        <li><a href="javascript:;">의과학자 인재 관리</a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_development.svg" class="nav_icon"><span>글로벌 인재육성</span></a>
-                    <ul>
                         <li><a href="javascript:;">메뉴명1</a></li>
                         <li><a href="javascript:;">메뉴명2</a></li>
                         <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_development.svg" class="nav_icon"><span>글로벌 인재육성</span></a>
+                    <ul>
+                        <li><a href="javascript:;">연수실적 보고서 관리</a></li>
+                        <li><a href="javascript:;" class="active">해외 연수정보 카테고리 관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_community.svg" class="nav_icon"><span>커뮤니티 관리</span></a>
@@ -150,59 +150,160 @@
                 <div>
                     <div class="page_history">
                         <span class="item">Home</span>
-                        <span class="item">Home 화면 관리</span>
-                        <span class="item">메인 배너 관리</span>
+                        <span class="item">글롭러 인재육성</span>
+                        <span class="item">해외 연수정보 카테고리 관리</span>
                     </div>
-                    <h2>메인 배너 상세</h2>
+                    <h2>해외 연수정보 카테고리 관리</h2>
                 </div>
             </div>
             <div class="page">
-                <div class="form_table">
-                    <div class="form_title">
-                        <h3>배너 상세</h3>
+
+                <div class="dot_info">
+                    <div class="title">해외 연수정보 카테고리 상세</div>
+                    <div class="info col">
+                        <div class="item">
+                            <div class="tit">카테고리명</div>
+                            <div class="cnt">[뉴욕, 미국]</div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">등록일자</div>
+                            <div class="cnt">2023-01-10</div>
+                        </div>
                     </div>
-                    <table>
-                        <colgroup> 
-                            <col style="width:200px;">
-                            <col>
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>배너 이미지</th>
-                                <td>
-                                    <img src="../../assets/images/login_bg.jpg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>메인 문구</th>
-                                <td>
-                                    2024 글로벌 연수 지원을 위한 해외 연수
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>서브 문구</th>
-                                <td>해외 연수를 지원합니다.</td>
-                            </tr>
-                            <tr>
-                                <th>링크 URL</th>
-                                <td><a href="https://kcfms.kr/community/news/notice/detail/75" target="_blank" class="link">https://kcfms.kr/community/news/notice/detail/75</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                </div>
+                <div class="table_wrap">
+                    <div class="list_top">
+                        <div class="caption">권한 부여 회원 목록</div>
+                    </div>
+                    <div class="table_list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width:8rem">NO</th>
+                                    <th>회원 ID</th>
+                                    <th>이름</th>
+                                    <th>연락처</th>
+                                    <th>이메일</th>
+                                    <th>회원유형</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>바이오 기관 및 관계자</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div class="bottom_btns">
                     <div class="r btn_list">
-                        <button type="button" class="btn btn_md btn_line">수정</button>
-                        <button type="button" class="btn btn_md btn_blue">확인</button>
+                        <button type="button" class="btn btn_md btn_sline">목록</button>
                     </div>
                 </div>
+                
             </div>
         </div>
         <!-- //content -->
     </div>
 </div>
 
-
+<!-- 이미지 미리보기 -->
+<div id="preview_image" class="layer_popup">
+    <div class="layer_box design_scroll" style="max-width:90%;width:auto;">
+        <div class="layer_header">
+            <div class="layer_title">이미지 미리보기</div>
+            <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <img src="../../assets/images/thum1.jpg" id="preview_image_element">
+        </div>
+    </div>
+    <span class="layer_bg" onclick="closeLayer(this)"></span>
+</div>
+<!-- //이미지 미리보기 -->
+<script>
+function previewImage(button){
+    const imgSrc = button.closest('.preview_img').querySelector('img').getAttribute('src');
+    document.getElementById('preview_image_element').setAttribute('src', imgSrc);
+}
+</script>
 </body>
 </html>	 

@@ -74,9 +74,9 @@
                         <li><a href="javascript:;">메뉴명3</a></li>
                     </ul>
                 </li>
-                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_db.svg" class="nav_icon"><span>바이오메디컬 DB</span></a>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_db.svg" class="nav_icon"><span>바이오메디컬 DB</span></a>
                     <ul>
-                        <li><a href="javascript:;" class="active">의과학자 인재 관리</a></li>
+                        <li><a href="javascript:;">의과학자 인재 관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_development.svg" class="nav_icon"><span>글로벌 인재육성</span></a>
@@ -86,11 +86,10 @@
                         <li><a href="javascript:;">메뉴명3</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_community.svg" class="nav_icon"><span>커뮤니티 관리</span></a>
+                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_community.svg" class="nav_icon"><span>커뮤니티 관리</span></a>
                     <ul>
-                        <li><a href="javascript:;">메뉴명1</a></li>
-                        <li><a href="javascript:;">메뉴명2</a></li>
-                        <li><a href="javascript:;">메뉴명3</a></li>
+                        <li><a href="javascript:;">뉴스레터 등록</a></li>
+                        <li><a href="javascript:;" class="active">설문 관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_admin.svg" class="nav_icon"><span>운영자 관리</span></a>
@@ -149,57 +148,24 @@
                 <div>
                     <div class="page_history">
                         <span class="item">Home</span>
-                        <span class="item">바이오메디컬 DB</span>
-                        <span class="item">바이오인재 관리</span>
+                        <span class="item">커뮤니티 관리</span>
+                        <span class="item">설문 관리</span>
                     </div>
-                    <h2>의과학자 인재 관리</h2>
+                    <h2>설문 관리</h2>
                 </div>
                 <div class="r">
                     <div class="btn_list">
                         <a href="javascript:;" class="btn btn_md btn_dblue">
                             <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6h8M6 10V2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
-                            인재등록
+                            설문 등록
                         </a>
                     </div>
                 </div>
             </div>
             <div class="page">
-                <div class="search_form">
-                    <form action="">
-                        <div class="search_inner search_vertical">
-                            <div class="items">
-                                <div class="items_row">
-                                    <div class="item">
-                                        <div class="tit">검색어</div>
-                                        <div class="cnt">
-                                            <div class="input_group">
-                                                <div class="input">
-                                                    <select name="" id="">
-                                                        <option value="">전체</option>
-                                                    </select>
-                                                </div>
-                                                <div class="input"><input type="text" placeholder="검색어를 입력하세요."></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btns">
-                                <button type="button" class="btn btn_md btn_line">
-                                    <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.611 1v4h4" stroke="#525A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="m2.57 3.848-.11-.063a5.25 5.25 0 1 1 .065 6.512.07.07 0 0 1 .008-.005c.009-.006.03-.015.074-.005.05.011.11.044.156.097a5.124 5.124 0 1 0-.192-6.536Z" stroke="#525A6B" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                                    초기화
-                                </button>
-                                <button type="button" class="btn btn_md btn_blue">
-                                    <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5.077" cy="5.077" r="4.327" stroke="#fff" stroke-width="1.5"/><path d="M8.307 8.308 11.999 12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
-                                    검색
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
                 <div class="table_wrap">
                     <div class="list_top">
-                        <div class="caption">총 등록 의과학자 <strong>521</strong>개</div>
+                        <div class="caption">설문 목록 <span class="sub">총 <strong>3</strong>개</span></div>
                         <div class="r">
                             <div class="item">
                                 <select name="" id="" style="width: 11rem;">
@@ -208,200 +174,207 @@
                                     <option value="">30개</option>
                                 </select>
                             </div>
-                            <div class="item">
-                                <button class="btn btn_md btn_sline" type="button">
-                                    <svg width="12" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 .008h4v6.937H4V.008Z" fill="#378FD7"/><path d="M0 4.945h12l-6 6.032-6-6.032ZM0 11.992h12v2H0z" fill="#378FD7"/></svg>
-                                    선택 Office 파일 다운로드
-                                </button>
-                            </div>
                         </div>
                     </div>
-                    <div class="table_list label_control">
+                    <div class="table_list">
                         <table>
+                            <colgroup>
+                                <col style="width:8rem;">
+                                <col style="width:10rem;">
+                                <col>
+                                <col style="width:30rem;">
+                                <col style="width:20rem;">
+                                <col style="width:10rem;">
+                                <col style="width:10rem;">
+                                <col style="width:10rem;">
+                            </colgroup>
                             <thead>
                                 <tr>
-                                    <th style="width:6rem;max-width:6rem;">
-                                        <label class="checkbox single"><input type="checkbox" class="check_all"><span class="ck_icon"></span></label>
-                                    </th>
-                                    <th>NO</th>
-                                    <th>이름</th>
-                                    <th>이메일</th>
-                                    <th>전공</th>
+                                    <th>순서</th>
                                     <th>노출여부</th>
-                                    <th>총 경력기간</th>
-                                    <th style="min-width:8rem;">수정</th>
-                                    <th style="min-width:8rem;">삭제</th>
+                                    <th>설문 제목</th>
+                                    <th>설문기간</th>
+                                    <th>작성일자</th>
+                                    <th>문항관리</th>
+                                    <th>미리보기</th>
+                                    <th>삭제</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge blue">노출</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge blue">노출</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge blue">노출</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge gray">숨김</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge gray">숨김</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge gray">숨김</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge gray">숨김</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge gray">숨김</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge gray">숨김</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
-                                    </td>
                                     <td>1</td>
-                                    <td>홍길동</td>
-                                    <td>abcd1234@trionsoft.co.kr</td>
-                                    <td>의학</td>
-                                    <td>O</td>
-                                    <td>-</td>
+                                    <td><span class="badge gray">숨김</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_modify.svg" alt="수정"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
                                     </td>
                                     <td>
-                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제"></button>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><span class="badge gray">숨김</span></td>
+                                    <td class="align_left">2024 설문조사 의과학자 커넥트 바이오메디컬 DB </td>
+                                    <td>2024-08-01 ~ 2024-08-31</td>
+                                    <td>2024-08-07</td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_question.svg" alt="문항관리"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_preview.svg" alt="미리보기"></button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="icon_btn"><img src="../../assets/images/icon_btn_remove.svg" alt="삭제하기"></button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -442,5 +415,26 @@
 </div>
 
 
+
+<!-- 이미지 미리보기 -->
+<div id="preview_image" class="layer_popup">
+    <div class="layer_box design_scroll" style="max-width:90%;width:auto;">
+        <div class="layer_header">
+            <div class="layer_title">이미지 미리보기</div>
+            <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <img src="../../assets/images/thum1.jpg" id="preview_image_element">
+        </div>
+    </div>
+    <span class="layer_bg" onclick="closeLayer(this)"></span>
+</div>
+<!-- //이미지 미리보기 -->
+<script>
+function previewImage(button){
+    const imgSrc = button.closest('.preview_img').querySelector('img').getAttribute('src');
+    document.getElementById('preview_image_element').setAttribute('src', imgSrc);
+}
+</script>
 </body>
 </html>	 

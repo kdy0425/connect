@@ -91,7 +91,7 @@
 .hd_navall .navall_content .navall_inner .navall_ul > li.v_mobile{display: none;}
 .hd_navall .navall_content .navall_inner .navall_ul > li + li{margin-left:5rem;}
 .hd_navall .navall_content .navall_inner .navall_ul > li > a{display: block;margin-bottom:3rem;border:1px solid #378FD7;color:#378FD7;border-radius:1rem;padding:1.7rem 1.5rem 1.3rem;font-size:1.6rem;font-weight:700;text-align: center;}
-.hd_navall .navall_content .navall_inner .navall_ul > li > a:hover{background-color:#eff4f7;}
+.hd_navall .navall_content .navall_inner .navall_ul > li > a:hover{background-color:rgba(235, 243, 252, 1);}
 .hd_navall .navall_content .navall_inner .navall_ul > li > ul{}
 .hd_navall .navall_content .navall_inner .navall_ul > li > ul > li{}
 .hd_navall .navall_content .navall_inner .navall_ul > li > ul > li + li{margin-top:3rem;}

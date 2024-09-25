@@ -489,7 +489,7 @@ small.error{color:#FF576B;}
 .banner_radios .item .img_item{margin-top:1rem;background-color: #F6F8F9;text-align: center;height:12.3rem;}
 .banner_radios .item .img_item.empty{}
 .banner_radios .item .img_item.empty .txt{display:flex;flex-direction: column;align-items: center;justify-content: center;height: 100%;}
-.banner_radios .item .img_item.empty .txt:before{content:"";display:block;margin:0 auto 1rem;width:1.6rem;height:1.6rem;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.72 1H3.276c-.982 0-1.778.796-1.778 1.778v12.444c0 .982.796 1.778 1.778 1.778H15.72c.982 0 1.778-.796 1.778-1.778V2.778c0-.982-.796-1.778-1.778-1.778Z' stroke='%239EB0BF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.394 7.221a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666ZM17.502 11.663 13.056 7.22 3.28 16.996' stroke='%239EB0BF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+.banner_radios .item .img_item.empty .txt:before{content:"";display:block;margin:0 auto 1rem;width:2rem;height:1.8rem;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.72 1H3.276c-.982 0-1.778.796-1.778 1.778v12.444c0 .982.796 1.778 1.778 1.778H15.72c.982 0 1.778-.796 1.778-1.778V2.778c0-.982-.796-1.778-1.778-1.778Z' stroke='%239EB0BF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.394 7.221a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666ZM17.502 11.663 13.056 7.22 3.28 16.996' stroke='%239EB0BF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
 .banner_radios .item .img_item.upload_image_radio{position: relative;}
 .banner_radios .item .img_item.upload_image_radio .upload_label{height: 100%;display: block;;overflow: hidden;background-position: center center;background-size: cover;background-repeat: no-repeat;}
 .banner_radios .item .img_item.upload_image_radio .upload_label input{position: absolute;left:-999999em;}
@@ -586,3 +586,6 @@ small.error{color:#FF576B;}
 .survey_set .group .input_txt{color:#111B3D;font-size:1.4rem;font-weight:600;margin-right:1.5rem;white-space: nowrap;}
 .survey_set .group .item .sec1{padding-left:2rem;}
 .survey_set .group .item .sec3{padding-right:2rem;}
+
+.drag_button{width:1.4rem;height:2rem;text-indent:-999em;overflow:hidden;border:0;background-color: transparent;background-position: center center;background-repeat: no-repeat;background-image: url('../images/drag_button.svg');cursor:grab}
+.drag_button:hover{filter:invert(0.4);}

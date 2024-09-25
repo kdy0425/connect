@@ -172,9 +172,22 @@
                     </div>
                     <div class="table_list">
                         <table>
+                            <colgroup>
+                                <col style="width:40px;">
+                                <col style="width:60px;">
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col style="width:80px;">
+                                <col style="width:80px;">
+                            </colgroup>
                             <thead>
                                 <tr>
-                                    <th>노출순서</th>
+                                    <th colspan="2">노출순서</th>
                                     <th>이미지</th>
                                     <th>메인 문구</th>
                                     <th>서브 문구</th>
@@ -182,16 +195,17 @@
                                     <th>작성일자</th>
                                     <th>수정인 ID</th>
                                     <th>수정일자</th>
-                                    <th style="min-width:8rem;">수정</th>
-                                    <th style="min-width:8rem;">삭제</th>
+                                    <th>수정</th>
+                                    <th>삭제</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody ondragover="dragover(event)">
                                 <tr>
-                                    <td>1</td>
+                                    <td><button type="button" draggable="true" ondragstart="dragstart(event)" ondragend="dragend(event)" class="drag_button">순서이동</button></td>
+                                    <td><span class="count">1</span></td>
                                     <td>
                                         <div class="preview_img">
-                                            <img src="../../assets/images/thum1.jpg">
+                                            <img src="../../assets/images/home_banner1.png">
                                             <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
                                         </div>
                                     </td>
@@ -209,10 +223,11 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
+                                    <td><button type="button" draggable="true" ondragstart="dragstart(event)" ondragend="dragend(event)" class="drag_button">순서이동</button></td>
+                                    <td><span class="count">2</span></td>
                                     <td>
                                         <div class="preview_img">
-                                            <img src="../../assets/images/login_bg.jpg">
+                                            <img src="../../assets/images/home_banner2.png">
                                             <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
                                         </div>
                                     </td>
@@ -230,10 +245,11 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
+                                    <td><button type="button" draggable="true" ondragstart="dragstart(event)" ondragend="dragend(event)" class="drag_button">순서이동</button></td>
+                                    <td><span class="count">3</span></td>
                                     <td>
                                         <div class="preview_img">
-                                            <img src="../../assets/images/thum1.jpg">
+                                            <img src="../../assets/images/home_banner3.png">
                                             <button type="button" class="preview_btn" onclick="openLayer('#preview_image');previewImage(this)">Preview</button>
                                         </div>
                                     </td>
@@ -281,6 +297,44 @@
 function previewImage(button){
     const imgSrc = button.closest('.preview_img').querySelector('img').getAttribute('src');
     document.getElementById('preview_image_element').setAttribute('src', imgSrc);
+}
+
+
+//테이블 tr 드래그앤 드랍
+let shadow;
+function dragstart(event) {
+    shadow = event.target.closest('tr');
+    setTimeout(() => {
+        shadow.style.opacity = '0.5';
+    }, 0);
+}
+
+function dragover(event) {
+    event.preventDefault();
+    const targetTr = event.target.closest('tr');
+    
+    if (!targetTr || targetTr === shadow) return;
+
+    const tbody = targetTr.parentNode;
+    const children = Array.from(tbody.children);
+    
+    if (children.indexOf(targetTr) > children.indexOf(shadow)) {
+        targetTr.after(shadow);
+    } else {
+        targetTr.before(shadow);
+    }
+}
+
+function dragend(event) {
+    shadow.style.opacity = '1';
+    shadow = null;
+	const tr = event.target.closest('tbody').querySelectorAll('tr');
+	tr.forEach(function(el, index){
+		if(el.querySelector('.count')){
+			el.querySelector('.count').textContent = index + 1;
+		}
+	});
+	showToast("success", "순서가 변경 완료되었습니다.", 3000);
 }
 </script>
 </body>

@@ -902,6 +902,7 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
 .support_box .description > span{display:block;}
 .support_box .advice{position:relative;padding-left:1.2rem;font-size:1.5rem;font-weight:400;color:#ff576b;}
 .support_box .advice.small{padding-left:0;text-indent:1rem;}
+.support_box .advice.small > div + div{margin-top:0.5rem;}
 .support_box .advice + .advice,
 .support_box .description + .advice,
 .support_box p + .advice{margin-top:.5rem;}
@@ -928,7 +929,7 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
 .support_box.target .cnt .item:before{content:'';position:absolute;top:0;left:0;width:.6rem;height:2rem;border:0;text-indent:-999em;overflow:hidden;border-radius:0.6rem;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 9 4-4-4-4' stroke='%23434859' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
 .support_box.target .cnt p{}
 .support_box.target .cnt p > .blue_point:after{content:'*';margin-left:.2rem;margin-right:.3rem;font-size: 1.5rem;font-weight: 400;color: #0066FF;}
-.support_box.target .cnt p span{display:block;}
+.support_box.target .cnt p span{display:inline-block;}
 .support_box.target .cnt p span + span{margin-top:.5rem;}
 .support_box.target .cnt .description + .advice.small{padding-left:1.6rem;text-indent:0rem;}
 .support_box.target .cnt .description + .advice.small:before{left:0;}

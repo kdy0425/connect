@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <title>CONNECT</title>
+    <link href="../../assets/css/normalize.css" rel="stylesheet"/>
+    <link href="../../assets/css/common.css" rel="stylesheet"/>
+    <link href="../../assets/css/layout.css" rel="stylesheet"/>
+    <link href="../../assets/css/content.css" rel="stylesheet"/>
+    <link href="../../assets/css/swiper.min.css" rel="stylesheet"/>
+    <link href="../../assets/css/slick.css" rel="stylesheet"/>
+    <link href="../../assets/css/simplebar.css" rel="stylesheet"/>
+    <script src="../../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/slick.min.js"></script>
+    <script src="../../assets/js/litepicker.js"></script>
+    <script src="../../assets/js/simplebar.min.js"></script>
+</head>
+<body>
+
+<div id="layout">
+
+    <!-- header -->
+    <div id="header">
+        <div class="hd_inner">
+            <h1 id="logo"><a href="javascript:;"><img src="../../assets/common/images/logo.svg" alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS"></a></h1>
+            <div id="nav">
+                <ul>
+                    <li><a href="javascript:;">사업소개</a></li>
+                    <li><a href="javascript:;">바이오메디털 DB</a></li>
+                    <li><a href="javascript:;">글로벌 인재육성</a></li>
+                    <li><a href="javascript:;">커뮤니티</a></li>
+                    <li><a href="javascript:;">센터 소개</a></li>
+                </ul>
+            </div>
+
+            <div id="hd_btns">
+                <div class="hd_lang v_pc">
+                    <button type="button" class="lang_btn">KR</button>
+                    <div class="lang_cnt">
+                        <a href="javascript:;" class="active">KR</a>
+                        <a href="javascript:;">EN</a>
+                    </div>
+                </div>
+                <div class="hd_link">
+                    <a href="javascript:;" class="background">회원가입</a>
+                </div><div class="hd_link">
+                    <a href="javascript:;" class="icon login">로그인</a>
+                </div>
+
+                <div class="hd_search">
+                    <button type="button" class="search_btn search_open">검색 열기</button>
+                    <button type="button" class="search_btn hd_btn_close">검색 닫기</button>
+                </div>
+                <div class="hd_navall">
+                    <button type="button" class="navall_btn navall_open">전체메뉴 열기</button>
+                    <button type="button" class="navall_btn hd_btn_close">전체메뉴 닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <div class="location">
+        <div class="items">
+            <div class="item"><a href="javascript:;" class="home">HOME</a></div>
+            <div class="item"><a href="javascript:;">바이오메디컬 DB</a></div>
+            <div class="item"><a href="javascript:;">의사과학자 현황 조사</a></div>
+            <div class="item"><a href="javascript:;">의사과학자 현황 조사목록</a></div>
+        </div>
+    </div>
+
+    <div id="aside_wrap">
+        <div id="aside">
+            <h2>바이오 메디컬 DB</h2>
+            <div class="aside_nav">
+                <ul>
+                    <li class="item">
+                        <button type="button">의과학자 인재 DB</button>
+                        <ul>
+                            <li><a href="javascript:;">의과학자 인재 DB  구축 취지</a></li>
+                            <li><a href="javascript:;">의과학자 인재 검색</a></li>
+                            <li><a href="javascript:;">의과학자 인재 등록 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <button type="button">바이오 메디컬 기관 DB</button>
+                        <ul>
+                            <li><a href="javascript:;">바이오 메디컬 기관 검색</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <button type="button">바이오 메디컬 인재 구인</button>
+                        <ul>
+                            <li><a href="javascript:;">바이오 메디컬 구인 정보</a></li>
+                        </ul>
+                    </li>
+                    <li class="item active">
+                        <button type="button">의사과학자 현황</button>
+                        <ul style="display: block;">
+                            <li><a href="javascript:;" class="active">의사과학자 현황 조사</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div id="content">
+            <div class="aw_title">
+                <h3>의사과학자 현황 조사</h3>
+            </div>
+
+            <div class="flex_top">
+                <div>
+                    <div class="custom_select size_18">
+                        <input type="hidden">
+                        <button type="button" class="select_selected" onclick="customSelect(this)">전체 통계</button>
+                        <div class="options design_scroll" data-simplebar>
+                            <div class="item"><a href="javascript:;" data-id="전체 통계" class="active" onclick="customSelectSelect(this);">전체 통계</a></div>
+                            <div class="item"><a href="javascript:;" data-id="통계2"  onclick="customSelectSelect(this);">통계2</a></div>
+                            <div class="item"><a href="javascript:;" data-id="통계3"  onclick="customSelectSelect(this);">통계3</a></div>
+                            <div class="item"><a href="javascript:;" data-id="통계4"  onclick="customSelectSelect(this);">통계4</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="r btn_list">
+                    <a href="javascript:;" class="btn btn_line" onclick="openLayer('#copy_link');">
+                        설문조사링크
+                    </a>
+                    <a href="javascript:;" class="btn btn_submit">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h8.727M8.365 10.728 4.547 7.455M8.365 10.728l3.819-3.273M8.363 10.727V1.999" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                        엑셀 다운로드(제출용)
+                    </a>
+                </div>
+            </div>
+
+            <div class="status_count_wrap">
+                <div class="box">
+                    <div class="icon">
+                        <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="30" fill="#EBF3FC"/><path d="M11 40h14v-2a7 7 0 1 0-14 0v2Z" stroke="#378FD7" stroke-width="2"/><circle cx="18" cy="26.5" r="3" stroke="#378FD7" stroke-width="2"/><path d="M35 40h14v-2a7 7 0 1 0-14 0v2Z" stroke="#378FD7" stroke-width="2"/><circle cx="42" cy="26.5" r="3" stroke="#378FD7" stroke-width="2"/><path d="M21 40h18v-4a9 9 0 1 0-18 0v4Z" fill="#EBF3FC" stroke="#378FD7" stroke-width="2"/><circle cx="30" cy="21.5" r="4" stroke="#378FD7" stroke-width="2"/></svg>
+                    </div>
+                    <div class="cnt">
+                        <div class="text">
+                            <span>총</span>
+                            <span class="count">15318</span>
+                            <span>명</span>
+                        </div>
+                        <div class="text">
+                            전임 <strong>10072</strong>명, 비전임<strong>5246</strong>명
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="30" fill="#EBF3FC"/><path d="M21 28.963h7.5M21 34.963h16M41.382 23.135v0c.806 0 1.46.653 1.46 1.46v14.33a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2v-13.79a2 2 0 0 1 2-2h14.158" stroke="#378FD7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m44.997 18.956-11.833 11.6-4.762.71.721-4.666L40.96 15l4.037 3.956Z" stroke="#378FD7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="cnt">
+                        <div class="text">
+                            <span>조사 참여</span>
+                            <span class="count">338</span>
+                            <span>명</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basic_table">
+                <table>
+                    <colgroup>
+                        <col style="width: 60%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>인원</th>
+                            <th>비율</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align_left">의사과학자</td>
+                            <td class="align_right nowrap">299<span class="unit">명</span></td>
+                            <td class="align_right nowrap">87.17<span class="unit">%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="align_left">의과학자</td>
+                            <td class="align_right nowrap">44<span class="unit">명</span></td>
+                            <td class="align_right nowrap">12.83<span class="unit">%</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>합계</th>
+                            <td class="align_right nowrap">343<span class="unit">명</span></td>
+                            <td class="align_right nowrap">100<span class="unit">%</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+             
+        </div>
+        <!-- //content -->
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="ft_top">
+            <div class="container_xl">
+                <div class="ft_logo_mobile">
+                    <img src="../../assets/common/images/logo.svg" alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS">
+                </div>
+                <div class="ft_sites">
+                    <div class="title">관련 사이트 바로가기</div>
+                    <div class="sites_slide_wrap">
+                        <div class="slide_actions">
+                            <div class="swiper-button-prev">이전 슬라이드</div>
+                            <div class="swiper-button-pause">일시정지</div>
+                            <div class="swiper-button-play" style="display: none;">재생</div>
+                            <div class="swiper-button-next">다음 슬라이드</div>
+                        </div>
+                        <div class="sites_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_mohw.png" alt="보건복지부"></a></div>
+                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_htdream.png" alt="htdream"></a></div>
+                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_khidi.png" alt="한국보건산업진흥원"></a></div>
+                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_kaomc.png" alt="한국의과대학.의학전문대학원협회"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft_bottom">
+            <div class="container_xl">
+                <div class="ft_links">
+                    <div class="item"><a href="javascript:;"><strong>개인정보처리방침</strong></a></div>
+                    <div class="item"><a href="javascript:;">이용약관</a></div>
+                    <div class="item"><a href="javascript:;">찾아오시는 길</a></div>
+                    <div class="item"><a href="javascript:;">문의하기</a></div>
+                </div>
+                <div class="ft_info">
+                    <div class="item">서울특별시 종로구 율곡로 190 여전도회관 707호</div>
+                    <div class="item">TEL : 02-6952-9685</div>
+                    <div class="item">FAX : 070-8282-9683</div>
+                    <div class="item">E-MAIL : kamc2975@gmail.com</div>
+                </div>
+                <div class="ft_copy">COPYRIGHT ⓒ KAMC. All Rights Reserved</div>
+                <div class="ft_sites_mobile custom_select">
+                    <button type="button" class="select_selected" onclick="customSelect(this)">관련사이트 바로가기</button>
+                    <div class="options design_scroll" data-simplebar>
+                        <div class="item"><a href="javascript:;">보건복지부</a></div>
+                        <div class="item"><a href="javascript:;">htdream</a></div>
+                        <div class="item"><a href="javascript:;">한국보건산업진흥원</a></div>
+                        <div class="item"><a href="javascript:;">한국의과대학.의학전문대학원협회</a></div>
+                    </div>
+                </div>
+                <!-- <div class="ft_sites_mobile custom_select">
+                    <input type="hidden">
+                    <button type="button" class="select_selected" onclick="customSelect(this)">관련사이트 바로가기</button>
+                    <div class="options design_scroll" data-simplebar>
+                        <div class="item"><a href="javascript:;" data-id="" >보건복지부</a></div>
+                        <div class="item"><a href="javascript:;" data-id="" >htdream</a></div>
+                        <div class="item"><a href="javascript:;" data-id="" >한국보건산업진흥원</a></div>
+                        <div class="item"><a href="javascript:;" data-id="" >한국의과대학.의학전문대학원협회</a></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+
+
+
+
+<!-- 설문조사링크 -->
+<div id="copy_link" class="layer_popup">
+    <div class="layer_box design_scroll" style="max-width:calc(100% - 3rem);width:46rem;">
+        <div class="layer_header">
+            <div class="layer_title">설문조사링크</div>
+            <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="form form_type1 n_border">
+                <div class="form_content">
+                    <div class="form_item size_xl">
+                        <div class="content">
+                            <div class="input_group">
+                                <div class="input">
+                                    <input type="text" class="bg_white font_gray" value="https://kcfms.kr/bio_db/professor/register?brNo=" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_btns margin_sm">
+                <button type="button" class="btn btn_submit" onclick="copyUrl('https://kcfms.kr/bio_db/professor/register?brNo=')">링크 복사</button>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg" onclick="closeLayer(this)"></span>
+</div>
+<!-- //설문조사링크 -->
+
+
+<script src="../../assets/js/common.js"></script>
+
+</body>
+</html>

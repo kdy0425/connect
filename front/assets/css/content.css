@@ -312,6 +312,28 @@ input.font_gray{color: #808698 !important;}
     .sns_accounts .account + .account{margin-top:1rem;}
 }
 
+.sns_accounts{display: flex;background-color: #F6F8FB;border-radius:0.5rem;padding:15px;}
+.sns_accounts .account{flex:1 1;display: flex;align-items: center;background-color: #fff;padding:1.2rem 1.5rem;border-radius:0.5rem;border:1px solid rgba(67, 72, 89, 0.1);}
+.sns_accounts .account + .account{margin-left:1rem;}
+.sns_accounts .account .tit{color:#434859;font-size:1.4rem;display: flex;align-items: center;}
+.sns_accounts .account .tit img{margin-right:0.8rem;width:3.2rem;}
+.sns_accounts .account .tit span{}
+.sns_accounts .account .toggle{margin-left:auto;}
+.sns_accounts .account .toggle label{position: relative;overflow: hidden;cursor: pointer;}
+.sns_accounts .account .toggle label input[type="checkbox"]{position: absolute;left:-999em;}
+.sns_accounts .account .toggle label .switch{transition: all 0.3s;display: block;width:4.4rem;height:2.2rem;border-radius:3rem;background-color: rgba(67, 72, 89, 0.2);}
+.sns_accounts .account .toggle label .switch:after{content:"";position: absolute;top:0.2rem;left:0.2rem;width:1.8rem;height:1.8rem;border-radius:50%;background-color: #fff;transition: all 0.3s;}
+.sns_accounts .account .toggle label input:checked + .switch{background-color: rgba(55, 143, 215, 1);}
+.sns_accounts .account .toggle label input:checked + .switch:after{left:2.4rem;}
+@media screen and (max-width:1040px) {
+    .sns_accounts{display: grid;grid-template-columns: repeat(2,1fr);gap:1rem;padding:1.2rem;}
+    .sns_accounts .account + .account{margin-left:0;}
+}
+@media screen and (max-width:390px) {
+    .sns_accounts{display: block;}
+    .sns_accounts .account + .account{margin-top:1rem;}
+}
+
 .title_img{text-align: center;margin-bottom:3rem;font-family: 'GmarketSans';}
 .title_img .img{margin-bottom:3rem;}
 .title_img .img img{}

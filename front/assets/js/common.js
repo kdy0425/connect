@@ -191,7 +191,7 @@ function customSelect(button) {
         options.classList.remove('bottom');
     }
 }
-function customSelectSelect(anchor) {
+function customSelectSelect(anchor, customHandler) {
 	const items = anchor.closest('.options').querySelectorAll('.item a');
 	items.forEach(function(item) {
 		item.classList.remove('active');
@@ -202,9 +202,14 @@ function customSelectSelect(anchor) {
 	hiddenInput.value = anchor.getAttribute('data-id');
 	btnSelect.textContent = anchor.textContent;
 	anchor.closest('.custom_select .options').style.display = 'none';
-	}
 
-	document.addEventListener('click', function(event) {
+    // 인자가 존재하면 해당 함수를 호출
+    if (customHandler && typeof window[customHandler] === 'function') {
+        window[customHandler](anchor);
+    }
+}
+
+document.addEventListener('click', function(event) {
 	if (!event.target.closest('.custom_select')) {
 		document.querySelectorAll('.custom_select .options').forEach(function(options) {
 			options.style.display = 'none';

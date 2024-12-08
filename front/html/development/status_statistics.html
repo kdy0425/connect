@@ -1,353 +1,1034 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
     <title>CONNECT</title>
-    <link href="../../assets/css/normalize.css" rel="stylesheet"/>
-    <link href="../../assets/css/common.css" rel="stylesheet"/>
-    <link href="../../assets/css/layout.css" rel="stylesheet"/>
-    <link href="../../assets/css/content.css" rel="stylesheet"/>
-    <link href="../../assets/css/swiper.min.css" rel="stylesheet"/>
-    <link href="../../assets/css/slick.css" rel="stylesheet"/>
-    <link href="../../assets/css/simplebar.css" rel="stylesheet"/>
+    <link href="../../assets/css/normalize.css" rel="stylesheet" />
+    <link href="../../assets/css/common.css" rel="stylesheet" />
+    <link href="../../assets/css/layout.css" rel="stylesheet" />
+    <link href="../../assets/css/content.css" rel="stylesheet" />
+    <link href="../../assets/css/swiper.min.css" rel="stylesheet" />
+    <link href="../../assets/css/slick.css" rel="stylesheet" />
+    <link href="../../assets/css/simplebar.css" rel="stylesheet" />
     <script src="../../assets/js/jquery-3.7.1.min.js"></script>
     <script src="../../assets/js/jquery-ui.js"></script>
     <script src="../../assets/js/swiper.min.js"></script>
     <script src="../../assets/js/slick.min.js"></script>
     <script src="../../assets/js/litepicker.js"></script>
     <script src="../../assets/js/simplebar.min.js"></script>
+    <script src="../../assets/js/amchart.js"></script>
+    <script src="../../assets/js/percent.js"></script>
+    <script src="../../assets/js/xy.js"></script>
+    <script src="../../assets/js/Animated.js"></script>
 </head>
 <body>
 
-<div id="layout">
+    <div id="layout">
+        <!-- header -->
+        <div id="header">
+            <div class="hd_inner">
+                <h1 id="logo"><a href="javascript:;"><img src="../../assets/common/images/logo.svg"
+                            alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS"></a></h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="javascript:;">사업소개</a></li>
+                        <li><a href="javascript:;">바이오메디털 DB</a></li>
+                        <li><a href="javascript:;">글로벌 인재육성</a></li>
+                        <li><a href="javascript:;">커뮤니티</a></li>
+                        <li><a href="javascript:;">센터 소개</a></li>
+                    </ul>
+                </div>
 
-    <!-- header -->
-    <div id="header">
-        <div class="hd_inner">
-            <h1 id="logo"><a href="javascript:;"><img src="../../assets/common/images/logo.svg" alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS"></a></h1>
-            <div id="nav">
-                <ul>
-                    <li><a href="javascript:;">사업소개</a></li>
-                    <li><a href="javascript:;">바이오메디털 DB</a></li>
-                    <li><a href="javascript:;">글로벌 인재육성</a></li>
-                    <li><a href="javascript:;">커뮤니티</a></li>
-                    <li><a href="javascript:;">센터 소개</a></li>
-                </ul>
-            </div>
+                <div id="hd_btns">
+                    <div class="hd_lang v_pc">
+                        <button type="button" class="lang_btn">KR</button>
+                        <div class="lang_cnt">
+                            <a href="javascript:;" class="active">KR</a>
+                            <a href="javascript:;">EN</a>
+                        </div>
+                    </div>
+                    <div class="hd_link">
+                        <a href="javascript:;" class="background">회원가입</a>
+                    </div>
+                    <div class="hd_link">
+                        <a href="javascript:;" class="icon login">로그인</a>
+                    </div>
 
-            <div id="hd_btns">
-                <div class="hd_lang v_pc">
-                    <button type="button" class="lang_btn">KR</button>
-                    <div class="lang_cnt">
-                        <a href="javascript:;" class="active">KR</a>
-                        <a href="javascript:;">EN</a>
+                    <div class="hd_search">
+                        <button type="button" class="search_btn search_open">검색 열기</button>
+                        <button type="button" class="search_btn hd_btn_close">검색 닫기</button>
+                    </div>
+                    <div class="hd_navall">
+                        <button type="button" class="navall_btn navall_open">전체메뉴 열기</button>
+                        <button type="button" class="navall_btn hd_btn_close">전체메뉴 닫기</button>
                     </div>
                 </div>
-                <div class="hd_link">
-                    <a href="javascript:;" class="background">회원가입</a>
-                </div><div class="hd_link">
-                    <a href="javascript:;" class="icon login">로그인</a>
-                </div>
-
-                <div class="hd_search">
-                    <button type="button" class="search_btn search_open">검색 열기</button>
-                    <button type="button" class="search_btn hd_btn_close">검색 닫기</button>
-                </div>
-                <div class="hd_navall">
-                    <button type="button" class="navall_btn navall_open">전체메뉴 열기</button>
-                    <button type="button" class="navall_btn hd_btn_close">전체메뉴 닫기</button>
-                </div>
             </div>
         </div>
-    </div>
-    <!-- //header -->
+        <!-- //header -->
 
-    <div class="location">
-        <div class="items">
-            <div class="item"><a href="javascript:;" class="home">HOME</a></div>
-            <div class="item"><a href="javascript:;">글로벌 인재육성</a></div>
-            <div class="item"><a href="javascript:;">연수실적 보고서 제출</a></div>
-            <div class="item"><a href="javascript:;">보고서 작성 및 제출 관리</a></div>
-        </div>
-    </div>
-
-    <div id="aside_wrap">
-        <div id="aside">
-            <h2>글로벌 인재육성</h2>
-            <div class="aside_nav">
-                <ul>
-                    <li class="item active">
-                        <button type="button">연수현황</button>
-                        <ul style="display: block;">
-                            <li><a href="javascript:;" class="active">연수현황 통계</a></li>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <button type="button">연수실적 보고서 제출</button>
-                        <ul>
-                            <li><a href="javascript:;">제출 안내</a></li>
-                            <li><a href="javascript:;">보고서 작성 및 제출 관리</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <button type="button">출입국 보고서 제출</button>
-                        <ul>
-                            <li><a href="javascript:;">제출 안내</a></li>
-                            <li><a href="javascript:;">출입국 보고서 작성 및 제출 관리</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">해외 연수정보 교류</a>
-                    </li>
-                </ul>
-
+        <div class="location">
+            <div class="items">
+                <div class="item"><a href="javascript:;" class="home">HOME</a></div>
+                <div class="item"><a href="javascript:;">글로벌 인재육성</a></div>
+                <div class="item"><a href="javascript:;">연수현황</a></div>
+                <div class="item"><a href="javascript:;">보고서 작성 및 제출 관리</a></div>
             </div>
         </div>
 
-        <!-- content -->
-        <div id="content">
-            <div class="aw_title">
-                <h3>연수현황 통계</h3>
-            </div>
+        <div id="aside_wrap">
+            <div id="aside">
+                <h2>글로벌 인재육성</h2>
+                <div class="aside_nav">
+                    <ul>
+                        <li class="item active">
+                            <button type="button">연수현황</button>
+                            <ul style="display: block;">
+                                <li><a href="javascript:;" class="active">연수현황 통계</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button">연수실적 보고서 제출</button>
+                            <ul>
+                                <li><a href="javascript:;">제출 안내</a></li>
+                                <li><a href="javascript:;">보고서 작성 및 제출 관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="button">출입국 보고서 제출</button>
+                            <ul>
+                                <li><a href="javascript:;">제출 안내</a></li>
+                                <li><a href="javascript:;">출입국 보고서 작성 및 제출 관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">해외 연수정보 교류</a>
+                        </li>
+                    </ul>
 
-            <div class="sub_section">
-                <h4 class="ss_title">연수년도</h4>
-                <div class="basic_table">
-                    <table>
-                        <colgroup>
-                            <col style="width: 60%;">
-                            <col style="width: 20%;">
-                            <col style="width: 20%;">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>연수년도</th>
-                                <th>인원</th>
-                                <th>비율</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="align_left">2024년</td>
-                                <td class="align_right nowrap">22<span class="unit">명</span></td>
-                                <td class="align_right nowrap">14.19<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">2023년</td>
-                                <td class="align_right nowrap">35<span class="unit">명</span></td>
-                                <td class="align_right nowrap">22.58<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">2022년</td>
-                                <td class="align_right nowrap">27<span class="unit">명</span></td>
-                                <td class="align_right nowrap">17.42<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">2021년</td>
-                                <td class="align_right nowrap">24<span class="unit">명</span></td>
-                                <td class="align_right nowrap">15.48<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">2020년</td>
-                                <td class="align_right nowrap">23<span class="unit">명</span></td>
-                                <td class="align_right nowrap">14.84<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">2019년</td>
-                                <td class="align_right nowrap">24<span class="unit">명</span></td>
-                                <td class="align_right nowrap">15.48<span class="unit">%</span></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>합계</th>
-                                <td class="align_right nowrap">155<span class="unit">명</span></td>
-                                <td class="align_right nowrap">100<span class="unit">%</span></td>
-                            </tr>
-                        </tfoot>
-                    </table>
                 </div>
             </div>
 
-            <div class="sub_section">
-                <h4 class="ss_title">세부 사업</h4>
-                <div class="basic_table">
-                    <table>
-                        <colgroup>
-                            <col style="width: 60%;">
-                            <col style="width: 20%;">
-                            <col style="width: 20%;">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>세부 사업</th>
-                                <th>인원</th>
-                                <th>비율</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="align_left">글로벌 의사과학자 양성사업(의과학자 글로벌 연수지원)(2024)</td>
-                                <td class="align_right nowrap">22<span class="unit">명</span></td>
-                                <td class="align_right nowrap">14.19<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">K-Medi 융합인재양성지원사업(현장수요 연계형 글로벌 인재 육성)(2022~2023)</td>
-                                <td class="align_right nowrap">62<span class="unit">명</span></td>
-                                <td class="align_right nowrap">40.00<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">보건의료인재양성지원(바이오메디컬 글로벌 인재양성)(2019~2021)</td>
-                                <td class="align_right nowrap">71<span class="unit">명</span></td>
-                                <td class="align_right nowrap">45.81<span class="unit">%</span></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>합계</th>
-                                <td class="align_right nowrap">155<span class="unit">명</span></td>
-                                <td class="align_right nowrap">100<span class="unit">%</span></td>
-                            </tr>
-                        </tfoot>
-                    </table>
+            <!-- content -->
+            <div id="content">
+                <div class="aw_title">
+                    <h3>연수현황 통계</h3>
                 </div>
-            </div>
 
-            <div class="sub_section">
-                <h4 class="ss_title">연수지역</h4>
-                <div class="basic_table">
-                    <table>
-                        <colgroup>
-                            <col style="width: 60%;">
-                            <col style="width: 20%;">
-                            <col style="width: 20%;">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>연수지역</th>
-                                <th>인원</th>
-                                <th>비율</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="align_left">미국 (United States of America)</td>
-                                <td class="align_right nowrap">127<span class="unit">명</span></td>
-                                <td class="align_right nowrap">83.01<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">영국 (United Kingdom of Great Britain and Northern Ireland)</td>
-                                <td class="align_right nowrap">9<span class="unit">명</span></td>
-                                <td class="align_right nowrap">5.88<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">캐나다 (Canada)</td>
-                                <td class="align_right nowrap">6<span class="unit">명</span></td>
-                                <td class="align_right nowrap">3.92<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">오스트레일리아 (Australia)</td>
-                                <td class="align_right nowrap">3<span class="unit">명</span></td>
-                                <td class="align_right nowrap">1.96<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">이탈리아 (Italy)</td>
-                                <td class="align_right nowrap">3<span class="unit">명</span></td>
-                                <td class="align_right nowrap">1.96<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">일본 (Japan)</td>
-                                <td class="align_right nowrap">2<span class="unit">명</span></td>
-                                <td class="align_right nowrap">1.31<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">싱가포르 (Singapore)</td>
-                                <td class="align_right nowrap">1<span class="unit">명</span></td>
-                                <td class="align_right nowrap">0.65<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">프랑스 (France)</td>
-                                <td class="align_right nowrap">1<span class="unit">명</span></td>
-                                <td class="align_right nowrap">0.65<span class="unit">%</span></td>
-                            </tr>
-                            <tr>
-                                <td class="align_left">아일랜드 (Ireland)</td>
-                                <td class="align_right nowrap">1<span class="unit">명</span></td>
-                                <td class="align_right nowrap">0.65<span class="unit">%</span></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>합계</th>
-                                <td class="align_right nowrap">153<span class="unit">명</span></td>
-                                <td class="align_right nowrap">100<span class="unit">%</span></td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                <div class="sub_section">
+                    <h4 class="ss_title">연수년도</h4>
+                    <div class="chart_content chart_bg1">
+                        <script>
+                        am5.ready(function () {
+                            var root = am5.Root.new("chartdiv");
+                            root.setThemes([
+                                am5themes_Animated.new(root)
+                            ]);
+                        
+                            var data = [
+                                {
+                                    name: "2019년",
+                                    steps: 24,
+                                    color: "#3CC7B2",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/chart_icon.png"
+                                    }
+                                },
+                                {
+                                    name: "2020년",
+                                    steps: 23,
+                                    color: "#30B2C0",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/chart_icon.png"
+                                    }
+                                },
+                                {
+                                    name: "2021년",
+                                    steps: 24,
+                                    color: "#4AAFDB",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/chart_icon.png"
+                                    }
+                                },
+                                {
+                                    name: "2022년",
+                                    steps: 27,
+                                    color: "#378FD7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/chart_icon.png"
+                                    }
+                                },
+                                {
+                                    name: "2023년",
+                                    steps: 35,
+                                    color: "#758EE2",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/chart_icon.png"
+                                    }
+                                },
+                                {
+                                    name: "2024년",
+                                    steps: 22,
+                                    color: "#8A87DE",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/chart_icon.png"
+                                    }
+                                }
+                            ];
+                        
+                            var totalSteps = data.reduce((sum, item) => sum + item.steps, 0);
+                        
+                            var chart = root.container.children.push(
+                                am5xy.XYChart.new(root, {
+                                    panX: false,
+                                    panY: false,
+                                    paddingLeft: 0,
+                                    paddingRight: 30,
+                                    paddingTop: 38,
+                                    wheelX: "none",
+                                    wheelY: "none"
+                                })
+                            );
+                        
+                            var yRenderer = am5xy.AxisRendererY.new(root, {
+                                minorGridEnabled: true
+                            });
+                            yRenderer.grid.template.set("visible", false);
+                        
+                            yRenderer.labels.template.setAll({
+                                fontSize: 14,
+                                fontFamily: "Pretendard, sans-serif",
+                                fill: am5.color("#1C243E"),
+                            });
+                        
+                            var yAxis = chart.yAxes.push(
+                                am5xy.CategoryAxis.new(root, {
+                                    categoryField: "name",
+                                    renderer: yRenderer,
+                                    paddingRight: 40
+                                })
+                            );
+                        
+                            var xRenderer = am5xy.AxisRendererX.new(root, {
+                                minGridDistance: 80,
+                                minorGridEnabled: true
+                            });
+                        
+                            var xAxis = chart.xAxes.push(
+                                am5xy.ValueAxis.new(root, {
+                                    min: 0,
+                                    renderer: xRenderer
+                                })
+                            );
+                        
+                            var series = chart.series.push(
+                                am5xy.ColumnSeries.new(root, {
+                                    name: "Income",
+                                    xAxis: xAxis,
+                                    yAxis: yAxis,
+                                    valueXField: "steps",
+                                    categoryYField: "name",
+                                    sequencedInterpolation: true,
+                                    calculateAggregates: true,
+                                    maskBullets: false,
+                                    tooltip: am5.Tooltip.new(root, {
+                                        dy: -22,
+                                        pointerOrientation: "vertical",
+                                        labelText: "{percentOfTotal}%",
+                                        autoTextColor: false,
+                                    })
+                                })
+                            );
+                        
+                            var tooltip = series.get("tooltip");
+                            tooltip.label.setAll({
+                                fill: am5.color("#FFFFFF"),
+                                fontSize: 15,
+                                fontWeight: "600",
+                                fontFamily: "Pretendard, sans-serif",
+                            });
+                        
+                            data = data.map(item => ({
+                                ...item,
+                                percentOfTotal: ((item.steps / totalSteps) * 100).toFixed(2)
+                            }));
+                        
+                            series.columns.template.setAll({
+                                strokeOpacity: 0,
+                                cornerRadiusBR: 6,
+                                cornerRadiusTR: 6,
+                                cornerRadiusBL: 6,
+                                cornerRadiusTL: 6,
+                                maxHeight: 35,
+                                fillOpacity: 1
+                            });
+                        
+                            series.columns.template.adapters.add("fill", function(fill, target) {
+                                return am5.color(target.dataItem.dataContext.color);
+                            });
+                        
+                            xRenderer.grid.template.setAll({
+                                stroke: am5.color("#020612"),
+                                strokeWidth: 1,
+                            });
+                                                    
+                            var currentlyHovered;
+                        
+                            series.columns.template.events.on("pointerover", function (e) {
+                                handleHover(e.target.dataItem);
+                            });
+                        
+                            series.columns.template.events.on("pointerout", function (e) {
+                                handleOut();
+                            });
+                        
+                            function handleHover(dataItem) {
+                                if (dataItem && currentlyHovered != dataItem) {
+                                    handleOut();
+                                    currentlyHovered = dataItem;
+                                    var bullet = dataItem.bullets[0];
+                                    bullet.animate({
+                                        key: "locationX",
+                                        to: 1,
+                                        duration: 600,
+                                        easing: am5.ease.out(am5.ease.cubic)
+                                    });
+                                }
+                            }
+                        
+                            function handleOut() {
+                                if (currentlyHovered) {
+                                    var bullet = currentlyHovered.bullets[0];
+                                    bullet.animate({
+                                        key: "locationX",
+                                        to: 0,
+                                        duration: 600,
+                                        easing: am5.ease.out(am5.ease.cubic)
+                                    });
+                                }
+                            }
+                        
+                            var circleTemplate = am5.Template.new({
+                                fill: am5.color("#000000")
+                            });
+                        
+                            series.bullets.push(function (root, series, dataItem) {
+                                var bulletContainer = am5.Container.new(root, {});
+                                var circle = bulletContainer.children.push(
+                                    am5.Circle.new(
+                                        root,
+                                        {
+                                            radius: 25
+                                        },
+                                        circleTemplate
+                                    )
+                                );
+                        
+                                var maskCircle = bulletContainer.children.push(
+                                    am5.Circle.new(root, { radius: 27 })
+                                );
+                        
+                                var imageContainer = bulletContainer.children.push(
+                                    am5.Container.new(root, {
+                                        mask: maskCircle,
+                                    })
+                                );
+                        
+                                var image = imageContainer.children.push(
+                                    am5.Picture.new(root, {
+                                        templateField: "pictureSettings",
+                                        centerX: am5.p50,
+                                        centerY: am5.p50,
+                                        width: 42,
+                                        height: 42
+                                    })
+                                );
+                        
+                                return am5.Bullet.new(root, {
+                                    locationX: 0,
+                                    sprite: bulletContainer
+                                });
+                            });
+                        
+                            circleTemplate.adapters.add("fill", function(fill, target) {
+                                return am5.color(target.dataItem.dataContext.color);
+                            });
+                        
+                            series.data.setAll(data);
+                            yAxis.data.setAll(data);
+                            var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+                            cursor.lineX.set("visible", false);
+                            cursor.lineY.set("visible", false);
+                        
+                            cursor.events.on("cursormoved", function () {
+                                var dataItem = series.get("tooltip").dataItem;
+                                if (dataItem) {
+                                    handleHover(dataItem)
+                                }
+                                else {
+                                    handleOut();
+                                }
+                            })
+                            series.appear();
+                            chart.appear(1000, 100);
+                        });
+                        </script>
+                        <div id="chartdiv"></div>
+                    </div>
                 </div>
-            </div>
-             
-        </div>
-        <!-- //content -->
-    </div>
 
-    <!-- footer -->
-    <div id="footer">
-        <div class="ft_top">
-            <div class="container_xl">
-                <div class="ft_logo_mobile">
-                    <img src="../../assets/common/images/logo.svg" alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS">
-                </div>
-                <div class="ft_sites">
-                    <div class="title">관련 사이트 바로가기</div>
-                    <div class="sites_slide_wrap">
-                        <div class="slide_actions">
-                            <div class="swiper-button-prev">이전 슬라이드</div>
-                            <div class="swiper-button-pause">일시정지</div>
-                            <div class="swiper-button-play" style="display: none;">재생</div>
-                            <div class="swiper-button-next">다음 슬라이드</div>
+                <div class="sub_section">
+                    <h4 class="ss_title">세부 사업</h4>
+                    <div class="chart_content chart_bg2">
+                        <script>
+                            am5.ready(function() {
+                            var root = am5.Root.new("chartdiv4");
+                            root.setThemes([
+                                am5themes_Animated.new(root)
+                            ]);
+                            var chart = root.container.children.push(am5percent.PieChart.new(root, {
+                                startAngle: 180,
+                                endAngle: 360,
+                                layout: root.verticalLayout,
+                                innerRadius: am5.percent(50)
+                            }));
+                            var series = chart.series.push(am5percent.PieSeries.new(root, {
+                                startAngle: 180,
+                                endAngle: 360,
+                                valueField: "value",
+                                categoryField: "category",
+                                alignLabels: false,
+                                tooltip: am5.Tooltip.new(root, {
+                                    dy: -15,
+                                    pointerOrientation: "vertical",
+                                    labelText: "{percentOfTotal}%",
+                                    autoTextColor: false,
+                                    getFillFromSprite: false,
+                                })
+                            }));
+                            var tooltip = series.get("tooltip");
+                            tooltip.get("background").set("fill", am5.color('#ffffff'));
+
+                            series.states.create("hidden", {
+                                startAngle: 180,
+                                endAngle: 180
+                            });
+
+                            series.labels.template.setAll({
+                                forceHidden: true
+                            });
+
+                            series.ticks.template.setAll({
+                                forceHidden: true
+                            });
+
+                            series.bullets.push(function(root, series, dataItem) {
+                                return am5.Bullet.new(root, {
+                                    locationX: 0.5,
+                                    locationY: 0.5,
+                                    sprite: am5.Label.new(root, {
+                                        html: `
+                                        <div class="donut_per">
+                                        <span class="per1" style="color:`+dataItem.dataContext.color+`">{valuePercentTotal.formatNumber('#.0')} <span>%</span></span>
+                                        <span class="per2" style="color:`+dataItem.dataContext.color+`">{valuePercentTotal.formatNumber('#.0')} <span>%</span></span>
+                                        </div>
+                                        `,
+                                        centerX: am5.percent(50),
+                                        centerY: am5.percent(50),
+                                        fontSize: "1.5em",
+                                        populateText: true,
+                                    })
+                                });
+                            });
+
+                            series.slices.template.adapters.add("fill", function(fill, target) {
+                                var dataItem = target.dataItem;
+                                if (dataItem && dataItem.dataContext && dataItem.dataContext.color) {
+                                    return am5.color(dataItem.dataContext.color);
+                                }
+                                return fill; // default color
+                            });
+                            
+
+                            series.slices.template.setAll({
+                                tooltipHTML: `
+                                    <div class="ct_tooltip">
+                                        <div class="category">{category}</div>
+                                        <div class="value"><strong>{value}</strong><span>명</span></div>
+                                    </div>
+                                `
+                            });
+
+                            series.data.setAll([
+                                { value: 71, category: "보건의료인재양성지원<br/>(바이오메디컬 글로벌 인재양성)", color: "#3AA8B4" },
+                                { value: 62, category: "K-Medi 융합인재양성지원사업<br/>(현장수요 연계형 글로벌 인재 육성)", color: "#3692DF" },
+                                { value: 23, category: "글로벌 의사과학자 양성사업<br/>(의과학자 글로벌 연수지원)", color: "#7A77D3" },
+                            ]);
+
+                            series.appear(1000, 100);
+                            });
+                        </script>
+                        <div class="chart_box">
+                            <div id="chartdiv4"></div>
+                            <div class="total">
+                                합계
+                                <strong>155</strong>
+                                명 
+                            </div>
                         </div>
-                        <div class="sites_slide">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_mohw.png" alt="보건복지부"></a></div>
-                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_htdream.png" alt="htdream"></a></div>
-                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_khidi.png" alt="한국보건산업진흥원"></a></div>
-                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_kaomc.png" alt="한국의과대학.의학전문대학원협회"></a></div>
+                        
+                        <div class="label_text">
+                            <div class="item">
+                                <div class="label">
+                                    <span style="background-color:#3AA8B4;" class="bullet"></span>
+                                    <span style="color:#3AA8B4;" class="text">2019~2021</span>
+                                </div>
+                                <div class="cnt">보건의료인재양성지원(바이오메디컬 글로벌 인재양성)</div>
+                            </div>
+                            <div class="item">
+                                <div class="label">
+                                    <span style="background-color:#3692DF;" class="bullet"></span>
+                                    <span style="color:#3692DF;" class="text">2022~2023</span>
+                                </div>
+                                <div class="cnt">K-Medi 융합인재양성지원사업(현장수요 연계형 글로벌 인재 육성)</div>
+                            </div>
+                            <div class="item">
+                                <div class="label">
+                                    <span style="background-color:#7A77D3;" class="bullet"></span>
+                                    <span style="color:#7A77D3;" class="text">2024</span>
+                                </div>
+                                <div class="cnt">글로벌 의사과학자 양성사업(의과학자 글로벌 연수지원)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub_section">
+                    <h4 class="ss_title">연수지역</h4>
+                    <div class="chart_content chart_bg1 pc">
+                        <script>
+                        am5.ready(function() {
+                        var root = am5.Root.new("chartdiv2");
+                        root.setThemes([
+                            am5themes_Animated.new(root)
+                        ]);
+                        var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                            panX: false,
+                            panY: false,
+                            wheelX: "panX",
+                            wheelY: "zoomX",
+                            paddingLeft: 0,
+                            paddingTop: 38,
+                            layout: root.verticalLayout
+                        }));
+                        
+                        var colors = chart.get("colors");
+                        
+                        var data = [{
+                            country: "미국\n(US)",
+                            visits: 127,
+                            icon: "../../assets/images/content/flag_us.svg",
+                            columnSettings: {  fill: am5.color("#378fd7") }
+                        }, {
+                            country: "영국\n(UK)",
+                            visits: 9,
+                            icon: "../../assets/images/content/flag_uk.svg",
+                            columnSettings: { fill: am5.color("#378fd7") }
+                        }, {
+                            country: "캐나다\n(Canada)",
+                            visits: 6,
+                            icon: "../../assets/images/content/flag_canada.svg",
+                            columnSettings: { fill: am5.color("#378fd7") }
+                        }, {
+                            country: "오스트레일리아\n(Australia)",
+                            visits: 3,
+                            icon: "../../assets/images/content/flag_australia.svg",
+                            columnSettings: { fill: am5.color("#378fd7") }
+                        }, {
+                            country: "이탈리아\n(Italy)",
+                            visits: 3,
+                            icon: "../../assets/images/content/flag_italy.svg",
+                            columnSettings: { fill: am5.color("#378fd7") }
+                        }, {
+                            country: "일본\n(Japan)",
+                            visits: 2,
+                            icon: "../../assets/images/content/flag_japan.svg",
+                            columnSettings: { fill: am5.color("#378fd7") }
+                        }, {
+                            country: "싱가포르\n(Singapore)",
+                            visits: 1,
+                            icon: "../../assets/images/content/flag_singapore.svg",
+                            columnSettings: { fill: am5.color("#378fd7") }
+                        }, {
+                            country: "프랑스\n(France)",
+                            visits: 1,
+                            icon: "../../assets/images/content/flag_france.svg",
+                            columnSettings: { fill: am5.color("#378fd7") }
+                        }, {
+                            country: "아일랜드\n(Ireland)",
+                            visits: 1,
+                            icon: "../../assets/images/content/flag_ireland.svg",
+                            columnSettings: { fill: am5.color("#378fd7") }
+                        }];
+                        
+                        var totalVisits = data.reduce((sum, item) => sum + item.visits, 0);
+                        
+                        data = data.map(item => ({
+                            ...item,
+                            percentOfTotal: ((item.visits / totalVisits) * 100).toFixed(2)
+                        }));
+                        
+                        var xRenderer = am5xy.AxisRendererX.new(root, {
+                            minGridDistance: 30,
+                            minorGridEnabled: true
+                        })
+                        
+                        var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+                            categoryField: "country",
+                            renderer: xRenderer,
+                            bullet: function (root, axis, dataItem) {
+                            return am5xy.AxisBullet.new(root, {
+                                location: 0.5,
+                                sprite: am5.Picture.new(root, {
+                                width: 33,
+                                height: 33,
+                                centerY: am5.p50,
+                                centerX: am5.p50,
+                                src: dataItem.dataContext.icon,
+                                })
+                            });
+                            }
+                        }));
+                        
+                        xRenderer.grid.template.setAll({
+                            location: 1
+                        })
+                        
+                        xRenderer.labels.template.setAll({
+                            paddingTop: 20,
+                            textAlign: "center",
+                            paddingTop: 30,
+                            fontSize: 14,
+                                fontFamily: "Pretendard, sans-serif",
+                                fill: am5.color("#1C243E"),
+                        });
+                        
+                        xAxis.data.setAll(data);
+                        
+                        var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+                            renderer: am5xy.AxisRendererY.new(root, {
+                                strokeOpacity: 0.1
+                            })
+                        }));
+                        
+                        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+                            xAxis: xAxis,
+                            yAxis: yAxis,
+                            valueYField: "visits",
+                            categoryXField: "country",
+                            tooltip: am5.Tooltip.new(root, {
+                                dy: -5,
+                                pointerOrientation: "vertical",
+                                labelText: "{percentOfTotal}%",
+                                autoTextColor: false,
+                                getFillFromSprite: false,
+                            })
+                        }));
+                        
+                        var tooltip = series.get("tooltip");
+                        tooltip.get("background").set("fill", am5.color(0x41739B));
+
+                        tooltip.label.setAll({
+                            fill: am5.color("#FFFFFF"),
+                            fontSize: 15,
+                            fontWeight: "600",
+                            fontFamily: "Pretendard, sans-serif",
+                        });
+                        
+                        series.columns.template.setAll({
+                            tooltipText: "{categoryX}: {valueY}",
+                            tooltipY: 0,
+                            strokeOpacity: 0,
+                            templateField: "columnSettings",
+                            width: am5.percent(65) //바 가로폭
+                        });
+                        series.columns.template.adapters.add("cornerRadiusTL", function() {
+                            return 5;
+                        });
+                        series.columns.template.adapters.add("cornerRadiusTR", function() {
+                            return 5;
+                        });
+                        
+                        series.data.setAll(data);
+                        
+                        series.appear();
+                        chart.appear(1000, 100);
+                        
+                        });
+                        </script>
+                        <div id="chartdiv2"></div>
+                    </div>
+               
+                    <div class="chart_content chart_bg1 mobile">
+                        <script>
+                         am5.ready(function () {
+                            var root = am5.Root.new("chartdiv3");
+                            root.setThemes([
+                                am5themes_Animated.new(root)
+                            ]);
+                        
+                            var data = [
+                                {
+                                    name: "미국\n(US)",
+                                    steps: 127,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_us.svg"
+                                    }
+                                },
+                                {
+                                    name: "영국\n(UK)",
+                                    steps: 9,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_uk.svg"
+                                    }
+                                },
+                                {
+                                    name: "캐나다\n(Canada)",
+                                    steps: 6,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_canada.svg"
+                                    }
+                                },
+                                {
+                                    name: "오스트레일리아\n(Australia)",
+                                    steps: 3,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_australia.svg",
+                                    }
+                                },
+                                {
+                                    name: "이탈리아\n(Italy)",
+                                    steps: 3,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_italy.svg"
+                                    }
+                                },
+                                {
+                                    name: "일본\n(Japan)",
+                                    steps: 2,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_japan.svg"
+                                    }
+                                },
+                                {
+                                    name: "싱가포르\n(Singapore)",
+                                    steps: 1,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_singapore.svg"
+                                    }
+                                },
+                                {
+                                    name: "프랑스\n(France)",
+                                    steps: 1,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_france.svg"
+                                    }
+                                },
+                                {
+                                    name: "아일랜드\n(Ireland)",
+                                    steps: 1,
+                                    color: "#378fd7",
+                                    pictureSettings: {
+                                        src: "../../assets/images/content/flag_ireland.svg"
+                                    }
+                                }
+                            ];
+                        
+                            var totalSteps = data.reduce((sum, item) => sum + item.steps, 0);
+                        
+                            var chart = root.container.children.push(
+                                am5xy.XYChart.new(root, {
+                                    panX: false,
+                                    panY: false,
+                                    paddingLeft: 0,
+                                    paddingRight: 30,
+                                    paddingTop: 38,
+                                    wheelX: "none",
+                                    wheelY: "none"
+                                })
+                            );
+                        
+                            var yRenderer = am5xy.AxisRendererY.new(root, {
+                                minorGridEnabled: true
+                            });
+                            yRenderer.grid.template.set("visible", false);
+                        
+                            yRenderer.labels.template.setAll({
+                                fontSize: 13,
+                                fontFamily: "Pretendard, sans-serif",
+                                fill: am5.color("#1C243E"),
+                                textAlign: "right",
+                            });
+                        
+                            var yAxis = chart.yAxes.push(
+                                am5xy.CategoryAxis.new(root, {
+                                    categoryField: "name",
+                                    renderer: yRenderer,
+                                    paddingRight: 20
+                                })
+                            );
+                        
+                            var xRenderer = am5xy.AxisRendererX.new(root, {
+                                minGridDistance: 50,
+                                minorGridEnabled: true
+                            });
+                        
+                            var xAxis = chart.xAxes.push(
+                                am5xy.ValueAxis.new(root, {
+                                    min: 0,
+                                    renderer: xRenderer
+                                })
+                            );
+                        
+                            var series = chart.series.push(
+                                am5xy.ColumnSeries.new(root, {
+                                    name: "Income",
+                                    xAxis: xAxis,
+                                    yAxis: yAxis,
+                                    valueXField: "steps",
+                                    categoryYField: "name",
+                                    sequencedInterpolation: true,
+                                    calculateAggregates: true,
+                                    maskBullets: false,
+                                    tooltip: am5.Tooltip.new(root, {
+                                        dy: -22,
+                                        pointerOrientation: "vertical",
+                                        labelText: "{percentOfTotal}%",
+                                        autoTextColor: false,
+                                        getFillFromSprite: false,
+                                    })
+                                })
+                            );
+                        
+                            var tooltip = series.get("tooltip");
+
+                            var tooltip = series.get("tooltip");
+                            tooltip.get("background").set("fill", am5.color(0x41739B));
+
+                            tooltip.label.setAll({
+                                fill: am5.color("#FFFFFF"),
+                                fontSize: 13,
+                                fontWeight: "600",
+                                fontFamily: "Pretendard, sans-serif",
+                            });
+                        
+                            data = data.map(item => ({
+                                ...item,
+                                percentOfTotal: ((item.steps / totalSteps) * 100).toFixed(2)
+                            }));
+                        
+                            series.columns.template.setAll({
+                                strokeOpacity: 0,
+                                cornerRadiusBR: 6,
+                                cornerRadiusTR: 6,
+                                cornerRadiusBL: 6,
+                                cornerRadiusTL: 6,
+                                maxHeight: 100,
+                                fillOpacity: 1
+                            });
+                        
+                            series.columns.template.adapters.add("fill", function(fill, target) {
+                                return am5.color(target.dataItem.dataContext.color);
+                            });
+                        
+                            xRenderer.grid.template.setAll({
+                                stroke: am5.color("#020612"),
+                                strokeWidth: 1,
+                            });
+                                                    
+                            var currentlyHovered;
+                        
+                            series.columns.template.events.on("pointerover", function (e) {
+                                handleHover(e.target.dataItem);
+                            });
+                        
+                            series.columns.template.events.on("pointerout", function (e) {
+                                handleOut();
+                            });
+                        
+                            function handleHover(dataItem) {
+                                if (dataItem && currentlyHovered != dataItem) {
+                                    handleOut();
+                                    currentlyHovered = dataItem;
+                                    var bullet = dataItem.bullets[0];
+                                    bullet.animate({
+                                        key: "locationX",
+                                        to: 1,
+                                        duration: 600,
+                                        easing: am5.ease.out(am5.ease.cubic)
+                                    });
+                                }
+                            }
+                        
+                            function handleOut() {
+                                if (currentlyHovered) {
+                                    var bullet = currentlyHovered.bullets[0];
+                                    bullet.animate({
+                                        key: "locationX",
+                                        to: 0,
+                                        duration: 600,
+                                        easing: am5.ease.out(am5.ease.cubic)
+                                    });
+                                }
+                            }
+                        
+                            var circleTemplate = am5.Template.new({
+                                fill: am5.color("#000000")
+                            });
+                        
+                            series.bullets.push(function (root, series, dataItem) {
+                                var bulletContainer = am5.Container.new(root, {});
+                                var circle = bulletContainer.children.push(
+                                    am5.Circle.new(
+                                        root,
+                                        {
+                                            radius: 16
+                                        },
+                                        circleTemplate
+                                    )
+                                );
+                        
+                                var maskCircle = bulletContainer.children.push(
+                                    am5.Circle.new(root, { radius: 27 })
+                                );
+                        
+                                var imageContainer = bulletContainer.children.push(
+                                    am5.Container.new(root, {
+                                        mask: maskCircle,
+                                    })
+                                );
+                        
+                                var image = imageContainer.children.push(
+                                    am5.Picture.new(root, {
+                                        templateField: "pictureSettings",
+                                        centerX: am5.p50,
+                                        centerY: am5.p50,
+                                        width: 35,
+                                        height: 35
+                                    })
+                                );
+                        
+                                return am5.Bullet.new(root, {
+                                    locationX: 0,
+                                    sprite: bulletContainer
+                                });
+                            });
+                        
+                            circleTemplate.adapters.add("fill", function(fill, target) {
+                                return am5.color(target.dataItem.dataContext.color);
+                            });
+                        
+                            series.data.setAll(data);
+                            yAxis.data.setAll(data);
+                            var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+                            cursor.lineX.set("visible", false);
+                            cursor.lineY.set("visible", false);
+                        
+                            cursor.events.on("cursormoved", function () {
+                                var dataItem = series.get("tooltip").dataItem;
+                                if (dataItem) {
+                                    handleHover(dataItem)
+                                }
+                                else {
+                                    handleOut();
+                                }
+                            })
+                            series.appear();
+                            chart.appear(1000, 100);
+                        });
+                        </script>
+                        <div id="chartdiv3"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //content -->
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="ft_top">
+                <div class="container_xl">
+                    <div class="ft_logo_mobile">
+                        <img src="../../assets/common/images/logo.svg"
+                            alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS">
+                    </div>
+                    <div class="ft_sites">
+                        <div class="title">관련 사이트 바로가기</div>
+                        <div class="sites_slide_wrap">
+                            <div class="slide_actions">
+                                <div class="swiper-button-prev">이전 슬라이드</div>
+                                <div class="swiper-button-pause">일시정지</div>
+                                <div class="swiper-button-play" style="display: none;">재생</div>
+                                <div class="swiper-button-next">다음 슬라이드</div>
+                            </div>
+                            <div class="sites_slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="javascript:;"><img
+                                                src="../../assets/images/content/sites_mohw.png" alt="보건복지부"></a></div>
+                                    <div class="swiper-slide"><a href="javascript:;"><img
+                                                src="../../assets/images/content/sites_htdream.png" alt="htdream"></a>
+                                    </div>
+                                    <div class="swiper-slide"><a href="javascript:;"><img
+                                                src="../../assets/images/content/sites_khidi.png" alt="한국보건산업진흥원"></a>
+                                    </div>
+                                    <div class="swiper-slide"><a href="javascript:;"><img
+                                                src="../../assets/images/content/sites_kaomc.png"
+                                                alt="한국의과대학.의학전문대학원협회"></a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="ft_bottom">
-            <div class="container_xl">
-                <div class="ft_links">
-                    <div class="item"><a href="javascript:;"><strong>개인정보처리방침</strong></a></div>
-                    <div class="item"><a href="javascript:;">이용약관</a></div>
-                    <div class="item"><a href="javascript:;">찾아오시는 길</a></div>
-                    <div class="item"><a href="javascript:;">문의하기</a></div>
-                </div>
-                <div class="ft_info">
-                    <div class="item">서울특별시 종로구 율곡로 190 여전도회관 707호</div>
-                    <div class="item">TEL : 02-6952-9685</div>
-                    <div class="item">FAX : 070-8282-9683</div>
-                    <div class="item">E-MAIL : kamc2975@gmail.com</div>
-                </div>
-                <div class="ft_copy">COPYRIGHT ⓒ KAMC. All Rights Reserved</div>
-                <div class="ft_sites_mobile custom_select">
-                    <button type="button" class="select_selected" onclick="customSelect(this)">관련사이트 바로가기</button>
-                    <div class="options design_scroll" data-simplebar>
-                        <div class="item"><a href="javascript:;">보건복지부</a></div>
-                        <div class="item"><a href="javascript:;">htdream</a></div>
-                        <div class="item"><a href="javascript:;">한국보건산업진흥원</a></div>
-                        <div class="item"><a href="javascript:;">한국의과대학.의학전문대학원협회</a></div>
+            <div class="ft_bottom">
+                <div class="container_xl">
+                    <div class="ft_links">
+                        <div class="item"><a href="javascript:;"><strong>개인정보처리방침</strong></a></div>
+                        <div class="item"><a href="javascript:;">이용약관</a></div>
+                        <div class="item"><a href="javascript:;">찾아오시는 길</a></div>
+                        <div class="item"><a href="javascript:;">문의하기</a></div>
                     </div>
-                </div>
-                <!-- <div class="ft_sites_mobile custom_select">
+                    <div class="ft_info">
+                        <div class="item">서울특별시 종로구 율곡로 190 여전도회관 707호</div>
+                        <div class="item">TEL : 02-6952-9685</div>
+                        <div class="item">FAX : 070-8282-9683</div>
+                        <div class="item">E-MAIL : kamc2975@gmail.com</div>
+                    </div>
+                    <div class="ft_copy">COPYRIGHT ⓒ KAMC. All Rights Reserved</div>
+                    <div class="ft_sites_mobile custom_select">
+                        <button type="button" class="select_selected" onclick="customSelect(this)">관련사이트 바로가기</button>
+                        <div class="options design_scroll" data-simplebar>
+                            <div class="item"><a href="javascript:;">보건복지부</a></div>
+                            <div class="item"><a href="javascript:;">htdream</a></div>
+                            <div class="item"><a href="javascript:;">한국보건산업진흥원</a></div>
+                            <div class="item"><a href="javascript:;">한국의과대학.의학전문대학원협회</a></div>
+                        </div>
+                    </div>
+                    <!-- <div class="ft_sites_mobile custom_select">
                     <input type="hidden">
                     <button type="button" class="select_selected" onclick="customSelect(this)">관련사이트 바로가기</button>
                     <div class="options design_scroll" data-simplebar>
@@ -357,13 +1038,14 @@
                         <div class="item"><a href="javascript:;" data-id="" >한국의과대학.의학전문대학원협회</a></div>
                     </div>
                 </div> -->
+                </div>
             </div>
         </div>
+        <!-- //footer -->
     </div>
-    <!-- //footer -->
-</div>
 
-<script src="../../assets/js/common.js"></script>
+    <script src="../../assets/js/common.js"></script>
 
 </body>
+
 </html>

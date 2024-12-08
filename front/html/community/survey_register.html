@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <title>CONNECT</title>
+    <link href="../../assets/css/normalize.css" rel="stylesheet"/>
+    <link href="../../assets/css/common.css" rel="stylesheet"/>
+    <link href="../../assets/css/layout.css" rel="stylesheet"/>
+    <link href="../../assets/css/content.css" rel="stylesheet"/>
+    <link href="../../assets/css/swiper.min.css" rel="stylesheet"/>
+    <link href="../../assets/css/slick.css" rel="stylesheet"/>
+    <link href="../../assets/css/pikaday.css" rel="stylesheet"/>
+    <link href="../../assets/css/simplebar.css" rel="stylesheet"/>
+    <script src="../../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/slick.min.js"></script>
+    <script src="../../assets/js/litepicker.js"></script>
+    <script src="../../assets/js/simplebar.min.js"></script>
+    <script src="../../assets/js/pikaday.js"></script>
+</head>
+<body>
+
+<div id="layout">
+
+    <!-- header -->
+    <div id="header">
+        <div class="hd_inner">
+            <h1 id="logo"><a href="javascript:;"><img src="../../assets/common/images/logo.svg" alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS"></a></h1>
+            <div id="nav">
+                <ul>
+                    <li><a href="javascript:;">사업소개</a></li>
+                    <li><a href="javascript:;">바이오메디털 DB</a></li>
+                    <li><a href="javascript:;">글로벌 인재육성</a></li>
+                    <li><a href="javascript:;">커뮤니티</a></li>
+                    <li><a href="javascript:;">센터 소개</a></li>
+                </ul>
+            </div>
+
+            <div id="hd_btns">
+                <div class="hd_lang v_pc">
+                    <button type="button" class="lang_btn">KR</button>
+                    <div class="lang_cnt">
+                        <a href="javascript:;" class="active">KR</a>
+                        <a href="javascript:;">EN</a>
+                    </div>
+                </div>
+                <div class="hd_link">
+                    <a href="javascript:;" class="background">회원가입</a>
+                </div><div class="hd_link">
+                    <a href="javascript:;" class="icon login">로그인</a>
+                </div>
+
+                <div class="hd_search">
+                    <button type="button" class="search_btn search_open">검색 열기</button>
+                    <button type="button" class="search_btn hd_btn_close">검색 닫기</button>
+                </div>
+                <div class="hd_navall">
+                    <button type="button" class="navall_btn navall_open">전체메뉴 열기</button>
+                    <button type="button" class="navall_btn hd_btn_close">전체메뉴 닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <div class="location">
+        <div class="items">
+            <div class="item"><a href="javascript:;" class="home">HOME</a></div>
+            <div class="item"><a href="javascript:;">커뮤니티</a></div>
+            <div class="item"><a href="javascript:;">정보마당</a></div>
+            <div class="item"><a href="javascript:;">설문 현황</a></div>
+        </div>
+    </div>
+
+    <div id="aside_wrap">
+        <div id="aside">
+            <h2>커뮤니티</h2>
+            <div class="aside_nav">
+                <ul>
+                    <li class="item">
+                        <button type="button">소식</button>
+                        <ul>
+                            <li><a href="javascript:;">통합 공지사항</a></li>
+                            <li><a href="javascript:;">뉴스레터</a></li>
+                            <li><a href="javascript:;">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <button type="button">자료실</button>
+                        <ul>
+                            <li><a href="javascript:;">통합 자료실</a></li>
+                            <li><a href="javascript:;">영상 미디어</a></li>
+                        </ul>
+                    </li>
+                    <li class="item active">
+                        <button type="button">정보마당</button>
+                        <ul style="display: block;">
+                            <li><a href="javascript:;">FAQ</a></li>
+                            <li><a href="javascript:;">Q&A</a></li>
+                            <li><a href="javascript:;" class="active">설문 현황</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div id="content">
+            <div class="aw_title">
+                <h3>설문 문항 등록</h3>
+            </div>
+
+            <form action="">
+                <div class="form form_type1 bg_lblue">
+                    <div class="form_content">
+                        <div class="form_item">
+                            <div class="form_label">설문 제목</div>
+                            <div class="content">
+                                <div class="input_group">
+                                    <div class="input">
+                                        <input type="text" placeholder="제목을 입력하세요.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <div class="form_label">설문 내용</div>
+                            <div class="content">
+                                <div class="input_group">
+                                    <div class="input">
+                                        <input type="text" placeholder="내용을 입력하세요.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <div class="form_label">설문 기간</div>
+                            <div class="content">
+                                <div class="input_group">
+                                    <div class="input">
+                                        <input type="text" class="datepicker">
+                                    </div>
+                                    <span class="dash">-</span>
+                                    <div class="input">
+                                        <input type="text" class="datepicker">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <div class="form_label">설문 대상</div>
+                            <div class="content">
+                                <div class="input_group">
+                                    <div class="input">
+                                        <div class="custom_select">
+                                            <input type="hidden">
+                                            <button type="button" class="select_selected" onclick="customSelect(this)">전체</button>
+                                            <div class="options design_scroll" data-simplebar>
+                                                <div class="item"><a href="javascript:;" data-id="" class="active" onclick="customSelectSelect(this);">전체</a></div>
+                                                <div class="item"><a href="javascript:;" data-id="설문 대상1"  onclick="customSelectSelect(this);">설문 대상1</a></div>
+                                                <div class="item"><a href="javascript:;" data-id="설문 대상2"  onclick="customSelectSelect(this);">설문 대상2</a></div>
+                                                <div class="item"><a href="javascript:;" data-id="설문 대상3"  onclick="customSelectSelect(this);">설문 대상3</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions_content">
+
+                    <div class="form form_type1">
+                        <div class="form_title">
+                            <h3>문항01</h3>
+                            <div class="r">
+                                <div class="btn_list">
+                                    <button type="button" class="btn btn_line" onclick="addQuestion(this);">
+                                        <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6h8M6 10V2" stroke="#378FD7" stroke-width="2" stroke-linecap="round"/></svg>
+                                        문항 추가
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_content">
+                            <div class="form_item col">
+                                <div class="form_label">문항</div>
+                                <div class="content">
+                                    <div class="input_group">
+                                        <div class="input">
+                                            <input type="text" placeholder="이름을 입력하세요.">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_item col">
+                                <div class="form_label">유형</div>
+                                <div class="content">
+                                    <div class="input_group">
+                                        <div class="input">
+                                            <div class="custom_select">
+                                                <input type="hidden">
+                                                <button type="button" class="select_selected" onclick="customSelect(this)">객관식(단일선택)</button>
+                                                <div class="options design_scroll" data-simplebar>
+                                                    <div class="item"><a href="javascript:;" data-id="객관식단일" class="active" onclick="customSelectSelect(this, 'questionSelectHandler');">객관식(단일선택)</a></div>
+                                                    <div class="item"><a href="javascript:;" data-id="객관식다중" onclick="customSelectSelect(this, 'questionSelectHandler');">객관식(다중선택)</a></div>
+                                                    <div class="item"><a href="javascript:;" data-id="주관식" onclick="customSelectSelect(this, 'questionSelectHandler');">주관식</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input multiple_input" style="display: none;">
+                                            <input type="tel" placeholder="선택 가능 개수 입력">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_add_wrap">
+                            <div class="form_add_top">
+                                <div class="r">
+                                    <div class="btn_list">
+                                        <button type="button" class="btn btn_lsubmit" onclick="add_row(this)">
+                                            <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6h8M6 10V2" stroke="#378FD7" stroke-width="2" stroke-linecap="round"/></svg>
+                                            항목 추가
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_add_content">
+                                <div class="form_add_row">
+                                    <div class="form_item col">
+                                        <div class="form_label">항목1</div>
+                                        <div class="content">
+                                            <div class="input_group">
+                                                <div class="input">
+                                                    <input type="text" placeholder="이름을 입력하세요.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form_item col">
+                                        <div class="form_label"> 기타 답변 여부</div>
+                                        <div class="content">
+                                            <div class="input_group">
+                                                <label class="checkbox radio_type1 inline">
+                                                    <input type="radio" name="radio1_1">
+                                                    <span class="ck_icon"></span>
+                                                    <strong>사용</strong>
+                                                </label>
+                                                <label class="checkbox radio_type1 inline">
+                                                    <input type="radio" name="radio1_1">
+                                                    <span class="ck_icon"></span>
+                                                    <strong>미사용</strong>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="remove_row" onclick="removeRow(this);">삭제</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form_btns margin5">
+                    <button type="button" class="btn btn_line">임시저장</button>
+                    <button type="button" class="btn btn_submit">저장하기</button>
+                    <button type="button" class="btn">취소</button>
+                </div>
+            </form>
+
+        </div>
+        <!-- //content -->
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="ft_top">
+            <div class="container_xl">
+                <div class="ft_logo_mobile">
+                    <img src="../../assets/common/images/logo.svg" alt="CONNECT CONNECTING FUTURE MEDICAL SCIENTISTS">
+                </div>
+                <div class="ft_sites">
+                    <div class="title">관련 사이트 바로가기</div>
+                    <div class="sites_slide_wrap">
+                        <div class="slide_actions">
+                            <div class="swiper-button-prev">이전 슬라이드</div>
+                            <div class="swiper-button-pause">일시정지</div>
+                            <div class="swiper-button-play" style="display: none;">재생</div>
+                            <div class="swiper-button-next">다음 슬라이드</div>
+                        </div>
+                        <div class="sites_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_mohw.png" alt="보건복지부"></a></div>
+                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_htdream.png" alt="htdream"></a></div>
+                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_khidi.png" alt="한국보건산업진흥원"></a></div>
+                                <div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/content/sites_kaomc.png" alt="한국의과대학.의학전문대학원협회"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft_bottom">
+            <div class="container_xl">
+                <div class="ft_links">
+                    <div class="item"><a href="javascript:;"><strong>개인정보처리방침</strong></a></div>
+                    <div class="item"><a href="javascript:;">이용약관</a></div>
+                    <div class="item"><a href="javascript:;">찾아오시는 길</a></div>
+                    <div class="item"><a href="javascript:;">문의하기</a></div>
+                </div>
+                <div class="ft_info">
+                    <div class="item">서울특별시 종로구 율곡로 190 여전도회관 707호</div>
+                    <div class="item">TEL : 02-6952-9685</div>
+                    <div class="item">FAX : 070-8282-9683</div>
+                    <div class="item">E-MAIL : kamc2975@gmail.com</div>
+                </div>
+                <div class="ft_copy">COPYRIGHT ⓒ KAMC. All Rights Reserved</div>
+                <div class="ft_sites_mobile custom_select">
+                    <button type="button" class="select_selected" onclick="customSelect(this)">관련사이트 바로가기</button>
+                    <div class="options design_scroll" data-simplebar>
+                        <div class="item"><a href="javascript:;">보건복지부</a></div>
+                        <div class="item"><a href="javascript:;">htdream</a></div>
+                        <div class="item"><a href="javascript:;">한국보건산업진흥원</a></div>
+                        <div class="item"><a href="javascript:;">한국의과대학.의학전문대학원협회</a></div>
+                    </div>
+                </div>
+                <!-- <div class="ft_sites_mobile custom_select">
+                    <input type="hidden">
+                    <button type="button" class="select_selected" onclick="customSelect(this)">관련사이트 바로가기</button>
+                    <div class="options design_scroll" data-simplebar>
+                        <div class="item"><a href="javascript:;" data-id="" >보건복지부</a></div>
+                        <div class="item"><a href="javascript:;" data-id="" >htdream</a></div>
+                        <div class="item"><a href="javascript:;" data-id="" >한국보건산업진흥원</a></div>
+                        <div class="item"><a href="javascript:;" data-id="" >한국의과대학.의학전문대학원협회</a></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+
+<script src="../../assets/js/common.js"></script>
+
+<script>
+//객관식, 주관식 항목 show hide
+function questionSelectHandler(anchor) {
+    const form = anchor.closest('.form');
+    const formAddWrap = form.querySelector('.form_add_wrap');
+    const multipleInput = form.querySelector('.multiple_input');
+
+    const selectedType = anchor.getAttribute('data-id');
+    if (selectedType.includes('객관식단일')) {
+        formAddWrap.style.display = 'block';
+        multipleInput.style.display = 'none';
+    } else if (selectedType === '객관식다중') {
+        formAddWrap.style.display = 'block';
+        multipleInput.style.display = 'flex';
+    } else if (selectedType === '주관식') {
+        formAddWrap.style.display = 'none';
+        multipleInput.style.display = 'none';
+    }
+}
+
+
+
+
+
+const questionsContainer = document.querySelector(".questions_content");
+//문항 추가
+function addQuestion(button) {
+    const forms = questionsContainer.querySelectorAll(".form");
+    const newQuestionNumber = forms.length + 1;
+    const newForm = document.createElement("div");
+    newForm.classList.add("form", "form_type1");
+    newForm.innerHTML = `
+        <div class="form_title">
+            <h3>문항${String(newQuestionNumber).padStart(2, "0")}</h3>
+            <div class="r">
+                <div class="btn_list">
+                    <button type="button" class="btn" onclick="removeQuestion(this)">
+                        <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m3 3 6.5 6.882M9.5 3 3 9.882" stroke="#818799" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        문항 삭제
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="form_content">
+            <div class="form_item col">
+                <div class="form_label">문항</div>
+                <div class="content">
+                    <div class="input_group">
+                        <div class="input">
+                            <input type="text" placeholder="이름을 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_item col">
+                <div class="form_label">유형</div>
+                <div class="content">
+                    <div class="input_group">
+                        <div class="input">
+                            <div class="custom_select">
+                                <input type="hidden">
+                                <button type="button" class="select_selected" onclick="customSelect(this)">객관식(단일선택)</button>
+                                <div class="options design_scroll" data-simplebar>
+                                    <div class="item"><a href="javascript:;" data-id="객관식단일" class="active" onclick="customSelectSelect(this, 'questionSelectHandler');">객관식(단일선택)</a></div>
+                                    <div class="item"><a href="javascript:;" data-id="객관식다중" onclick="customSelectSelect(this, 'questionSelectHandler');">객관식(다중선택)</a></div>
+                                    <div class="item"><a href="javascript:;" data-id="주관식" onclick="customSelectSelect(this, 'questionSelectHandler');">주관식</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input multiple_input" style="display: none;">
+                            <input type="tel" placeholder="선택 가능 개수 입력">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_add_wrap">
+            <div class="form_add_top">
+                <div class="r">
+                    <div class="btn_list">
+                        <button type="button" class="btn btn_lsubmit" onclick="add_row(this)">
+                            <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 6h8M6 10V2" stroke="#378FD7" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            항목 추가
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form_add_content">
+                <div class="form_add_row">
+                    <div class="form_item col">
+                        <div class="form_label">항목1</div>
+                        <div class="content">
+                            <div class="input_group">
+                                <div class="input">
+                                    <input type="text" placeholder="이름을 입력하세요.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_item col">
+                        <div class="form_label"> 기타 답변 여부</div>
+                        <div class="content">
+                            <div class="input_group">
+                                <label class="checkbox radio_type1 inline">
+                                    <input type="radio" name="radio${newQuestionNumber}_1">
+                                    <span class="ck_icon"></span>
+                                    <strong>사용</strong>
+                                </label>
+                                <label class="checkbox radio_type1 inline">
+                                    <input type="radio" name="radio${newQuestionNumber}_1">
+                                    <span class="ck_icon"></span>
+                                    <strong>미사용</strong>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="remove_row" onclick="removeRow(this);">삭제</button>
+                </div>
+            </div>
+        </div>
+    `;
+    questionsContainer.appendChild(newForm);
+}
+
+// 문항 삭제 
+function removeQuestion(button) {
+    const form = button.closest(".form");
+    if (form) {
+        form.remove();
+    }
+
+    // 문항 번호 업데이트
+    const forms = questionsContainer.querySelectorAll(".form");
+    forms.forEach((form, index) => {
+        const questionNumber = String(index + 1).padStart(2, "0");
+        const title = form.querySelector(".form_title h3");
+        if (title) {
+            title.textContent = `문항${questionNumber}`;
+        }
+    });
+}
+
+//항목 추가
+function add_row(btn) {
+    const formAddWrap = btn.closest('.form_add_wrap');
+    if (!formAddWrap) return;
+
+    const formAddContent = formAddWrap.querySelector('.form_add_content');
+    if (!formAddContent) return;
+
+    const currentRows = formAddContent.querySelectorAll('.form_add_row');
+    const newIndex = currentRows.length + 1;
+
+    const newRow = document.createElement('div');
+    newRow.className = 'form_add_row';
+    newRow.innerHTML = `
+        <div class="form_item col">
+            <div class="form_label">항목${newIndex}</div>
+            <div class="content">
+                <div class="input_group">
+                    <div class="input">
+                        <input type="text" placeholder="이름을 입력하세요.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_item col">
+            <div class="form_label">기타 답변 여부</div>
+            <div class="content">
+                <div class="input_group">
+                    <label class="checkbox radio_type1 inline">
+                        <input type="radio" name="radio1_${newIndex}" value="use">
+                        <span class="ck_icon"></span>
+                        <strong>사용</strong>
+                    </label>
+                    <label class="checkbox radio_type1 inline">
+                        <input type="radio" name="radio1_${newIndex}" value="unuse">
+                        <span class="ck_icon"></span>
+                        <strong>미사용</strong>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="remove_row" onclick="removeRow(this);">삭제</button>
+    `;
+
+    formAddContent.appendChild(newRow);
+}
+
+//항목 삭제
+function removeRow(removeBtn) {
+    const formAddWrap = removeBtn.closest('.form_add_wrap');
+    const formAddContent = removeBtn.closest('.form_add_content');
+    const rows = formAddContent.querySelectorAll('.form_add_row');
+
+    if (rows.length <= 1) {
+        const lastRow = rows[0];
+        lastRow.querySelector('input[type="text"]').value = '';
+        const radioInputs = lastRow.querySelectorAll('input[type="radio"]');
+        radioInputs.forEach(radio => radio.checked = false);
+        return;
+    }
+
+    const rowToRemove = removeBtn.closest('.form_add_row');
+    rowToRemove.remove();
+
+    const remainingRows = formAddContent.querySelectorAll('.form_add_row');
+    remainingRows.forEach((row, index) => {
+        const label = row.querySelector('.form_label');
+        const radioInputs = row.querySelectorAll('input[type="radio"]');
+        
+        label.textContent = `항목${index + 1}`;
+        radioInputs.forEach(radio => {
+            radio.name = `radio1_${index + 1}`;
+        });
+    });
+}
+</script>
+</body>
+</html>

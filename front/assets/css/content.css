@@ -2027,7 +2027,7 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
     #chartdiv{height: 450px;}
     #chartdiv2{height: 500px;}
     #chartdiv3{height: 620px;}
-    #chartdiv4{height: 250px;}
+    #chartdiv4{height: 300px;}
     
     .chart_content .label_text{margin-top:20px;}
     .chart_content .label_text{display: block;padding:1.5rem;}

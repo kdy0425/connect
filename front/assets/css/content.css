@@ -288,6 +288,8 @@ input.font_gray{color: #808698 !important;}
     .form_title .r .custom_select.size_md{width:15rem;}
 
     .form_add_wrap .form_add_row{padding:1.2rem 1rem;display: block;padding-right:4.5rem;}
+    .form_add_wrap .form_add_row .form_item.col .form_label{font-size:1.3rem;}
+    .form_add_wrap .form_add_row .remove_row{margin:0;top:1.5rem;}
 }
 
 .sns_accounts{display: flex;background-color: #F6F8FB;border-radius:0.5rem;padding:15px;}

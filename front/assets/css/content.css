@@ -255,6 +255,8 @@ input.font_gray{color: #808698 !important;}
     .form_type1 .form_btn .plus{padding-left:1.6rem;}
     .form_type1 .form_btn .address{padding-left:1.7rem;}
 
+    .form_type1 > .form_content > .form_item.col{align-items: start;}
+    .form_type1 > .form_content >  .form_item.col .form_label{margin-top:8px;}
     .form_type1 .form_item.col .content .input_group{flex-wrap: wrap;}
     .form_type1 .form_item.col .content .input_group .input{width:100%;}
     .form_type1 .form_item.col .content .input_group .input + .input{margin:0.4rem 0 0 0;}
@@ -562,6 +564,7 @@ input.font_gray{color: #808698 !important;}
 .gall_content2 .item > a{display:block;height: 100%;border:1px solid rgba(67, 72, 89, 0.1);border-radius:1rem;padding:3.5rem 0;}
 .gall_content2 .item .thum{display:block;position: relative;overflow:hidden;height: 15rem;}
 .gall_content2 .item .thum img{max-width: 100%;position: absolute;left:50%;top:50%;transform: translate(calc(-50% - 0.5px),calc(-50% - 0.5px));}
+.gall_content2 .item .thum img.no_image{max-width:9rem;}
 .gall_content2 .item .cnt{margin-top:2rem;padding:0 2rem;}
 .gall_content2 .item .badge{margin:0 auto  1rem;font-weight:700;font-size:1.4rem;border-radius:3rem;padding:0.7rem 1.2rem;}
 .gall_content2 .item .badge.blue{background-color: rgba(55, 143, 215, 1);color:#fff;}
@@ -575,6 +578,7 @@ input.font_gray{color: #808698 !important;}
     .gall_content2 .item .cnt{margin-top:1.5rem;}
     .gall_content2 .item .badge{font-size:1.3rem;padding:0.3rem 1rem 0.2rem;}
     .gall_content2 .item .subject{font-size:1.5rem;}
+    .gall_content2 .item .thum img.no_image{max-width:7rem;}
 }
 @media screen and (max-width:650px) {
     .gall_content2.result_gall{display: flex;white-space: nowrap;margin-left:-1.5rem;margin-right:-1.5rem;padding:0 1.5rem;overflow-x:auto;gap:1rem;;}
@@ -1445,10 +1449,12 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
     .result_list .item .info span{margin:0 1.2rem 0.5rem 0;}
 }
 
+img.no_image{max-width:9rem;}
 .institution_detail{}
 .institution_detail .institution_visual{border-radius:1.5rem;background-position: center center;background-size: cover;background-color: #ddd;position: relative;height: 16rem;margin-bottom:7rem;}
 .institution_detail .institution_logo{position: absolute;width:12rem;height:12rem;bottom:-4rem;left:50%;margin-left:-6rem;border-radius:3rem;background-position: center center;background-size: cover;background-color: #ccc;}
 .institution_detail .institution_nologo{position: absolute;width:12rem;height:12rem;bottom:-4rem;left:50%;margin-left:-6rem;border-radius:3rem;display: flex;align-items: center;justify-content: center;background-color: #f6f8fb;}
+.institution_detail .institution_nologo img{max-width:9rem;}
 .institution_detail .institution_cnt{}
 .institution_detail .institution_cnt .title{display: flex;flex-wrap: wrap;align-items: center;padding-bottom:2rem;border-bottom:1px solid rgba(67, 72, 89, 1);margin-bottom:3rem;}
 .institution_detail .institution_cnt .title h4{color:rgba(28, 36, 62, 1);font-size:2.8rem;font-weight:500;}
@@ -1467,10 +1473,12 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
 .institution_detail .content .item .more_btn .btn.active:before{transform: rotate(-180deg);}
 .institution_detail .content .item.hidden .cnt{height: 4rem;overflow: hidden;}
 @media screen and (max-width:1040px) {
+    img.no_image{max-width:7rem;}
     .institution_detail{}
     .institution_detail .institution_visual{border-radius:1rem;height: auto;padding-top:40%;margin-bottom:5rem;}
     .institution_detail .institution_logo{width:8rem;height:8rem;bottom:-3rem;margin-left:-4rem;border-radius:2rem;}
-    .institution_detail .institution_nologo{width:7rem;height:7rem;bottom:-2.5rem;margin-left:-3.5rem;}
+    .institution_detail .institution_nologo{width:8rem;height:8rem;bottom:-3rem;margin-left:-4rem;border-radius:2rem;}
+    .institution_detail .institution_nologo img{max-width:5.5rem;}
 
     .institution_detail .institution_cnt .title{padding-bottom:1.5rem;margin-bottom:2rem;}
     .institution_detail .institution_cnt .title h4{font-size:2.2rem;}
@@ -2010,7 +2018,7 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
 .chart_content.pc{}
 .chart_content.mobile{display: none;}
 
-.ct_tooltip{padding:0;border:0 !important;margin:0;text-align: center;position: relative;z-index: 2;}
+.ct_tooltip{padding:0;border:0 !important;margin:0;text-align: center;position: relative;z-index: 5;background-color: #fff;}
 .ct_tooltip .category{color:#1C243E;font-size:15px;font-weight:600;margin-bottom:6px;}
 .ct_tooltip .category br{display: none;}
 .ct_tooltip .value{display:inline-flex;align-items: center;color:#3692DF;padding-left:17px;background-position: left center;background-repeat: no-repeat;background-image: url('../../assets/images/content/ct_tooltip_person.png');background-size: 16px;}

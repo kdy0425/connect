@@ -1448,7 +1448,7 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
 .institution_detail{}
 .institution_detail .institution_visual{border-radius:1.5rem;background-position: center center;background-size: cover;background-color: #ddd;position: relative;height: 16rem;margin-bottom:7rem;}
 .institution_detail .institution_logo{position: absolute;width:12rem;height:12rem;bottom:-4rem;left:50%;margin-left:-6rem;border-radius:3rem;background-position: center center;background-size: cover;background-color: #ccc;}
-.institution_detail .institution_nologo{position: absolute;width:12rem;height:12rem;bottom:-4rem;left:50%;margin-left:-6rem;display: flex;align-items: center;justify-content: center;}
+.institution_detail .institution_nologo{position: absolute;width:12rem;height:12rem;bottom:-4rem;left:50%;margin-left:-6rem;border-radius:3rem;display: flex;align-items: center;justify-content: center;background-color: #f6f8fb;}
 .institution_detail .institution_cnt{}
 .institution_detail .institution_cnt .title{display: flex;flex-wrap: wrap;align-items: center;padding-bottom:2rem;border-bottom:1px solid rgba(67, 72, 89, 1);margin-bottom:3rem;}
 .institution_detail .institution_cnt .title h4{color:rgba(28, 36, 62, 1);font-size:2.8rem;font-weight:500;}
@@ -2021,7 +2021,7 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
 .donut_per > span{display:flex;justify-content:center;align-items:center;font-size: 24px;font-weight:700;left:50%;top:50%;transform:translate(-50%,-50%);position:absolute;}
 .donut_per > span span{margin-left:5px;margin-top:3px;font-size:16px;font-weight:700;}
 .donut_per .per1{-webkit-text-stroke:4px #fff;z-index: 2;}
-.donut_per .per2{z-index: 5;}
+.donut_per .per2{z-index: 5;filter: brightness(0.85);}
 
 @media screen and (max-width:1040px) {
     .chart_bg1{padding:0 0 30px 10px;}

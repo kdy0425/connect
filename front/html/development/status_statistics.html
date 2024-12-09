@@ -412,7 +412,18 @@
                                 })
                             }));
                             var tooltip = series.get("tooltip");
+                            
                             tooltip.get("background").set("fill", am5.color('#ffffff'));
+
+                            series.get("tooltip").get("background").setAll({
+                                fill: am5.color("#ffffff"),
+                                shadowColor: am5.color(0x1476c9),
+                                shadowBlur: 10,
+                                shadowOffsetX: 4,
+                                shadowOffsetY: 4,
+                                shadowOpacity: 0.3,
+                                fillOpacity: 1
+                            });
 
                             series.states.create("hidden", {
                                 startAngle: 180,
@@ -465,9 +476,9 @@
                             });
 
                             series.data.setAll([
-                                { value: 71, category: "보건의료인재양성지원<br/>(바이오메디컬 글로벌 인재양성)", color: "#3AA8B4" },
-                                { value: 62, category: "K-Medi 융합인재양성지원사업<br/>(현장수요 연계형 글로벌 인재 육성)", color: "#3692DF" },
-                                { value: 23, category: "글로벌 의사과학자 양성사업<br/>(의과학자 글로벌 연수지원)", color: "#7A77D3" },
+                                { value: 71, category: "보건의료인재양성지원<br/>(바이오메디컬 글로벌 인재양성)", color: "#48C4D1" },
+                                { value: 62, category: "K-Medi 융합인재양성지원사업<br/>(현장수요 연계형 글로벌 인재 육성)", color: "#56AFF9" },
+                                { value: 23, category: "글로벌 의사과학자 양성사업<br/>(의과학자 글로벌 연수지원)", color: "#8A87DE" },
                             ]);
 
                             series.appear(1000, 100);

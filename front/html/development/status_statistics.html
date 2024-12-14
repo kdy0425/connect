@@ -412,7 +412,23 @@
                                 })
                             }));
                             var tooltip = series.get("tooltip");
+                            
                             tooltip.get("background").set("fill", am5.color('#ffffff'));
+
+                            series.get("tooltip").get("background").setAll({
+                                fill: am5.color("#ffffff"),
+                                shadowColor: am5.color(0x1476c9),
+                                shadowBlur: 10,
+                                shadowOffsetX: 4,
+                                shadowOffsetY: 4,
+                                shadowOpacity: 0.3,
+                                paddingTop:0,
+                                paddingBottom:0,
+                                paddingLeft:0,
+                                paddingRight:0,
+                                fillOpacity: 1
+                            });
+                            
 
                             series.states.create("hidden", {
                                 startAngle: 180,
@@ -456,6 +472,7 @@
                             
 
                             series.slices.template.setAll({
+                                strokeWidth: 0.000001,
                                 tooltipHTML: `
                                     <div class="ct_tooltip">
                                         <div class="category">{category}</div>

@@ -89,12 +89,12 @@
 .hd_navall .navall_content .navall_inner .navall_ul{display:flex;word-break: keep-all;}
 .hd_navall .navall_content .navall_inner .navall_ul > li{flex:1 1;font-weight:500;}
 .hd_navall .navall_content .navall_inner .navall_ul > li.v_mobile{display: none;}
-.hd_navall .navall_content .navall_inner .navall_ul > li + li{margin-left:5rem;}
+.hd_navall .navall_content .navall_inner .navall_ul > li + li{margin-left:3rem;}
 .hd_navall .navall_content .navall_inner .navall_ul > li > a{display: block;margin-bottom:3rem;border:1px solid #378FD7;color:#378FD7;border-radius:1rem;padding:1.7rem 1.5rem 1.3rem;font-size:1.6rem;font-weight:700;text-align: center;}
 .hd_navall .navall_content .navall_inner .navall_ul > li > a:hover{background-color:rgba(235, 243, 252, 1);}
 .hd_navall .navall_content .navall_inner .navall_ul > li > ul{}
-.hd_navall .navall_content .navall_inner .navall_ul > li > ul > li{}
-.hd_navall .navall_content .navall_inner .navall_ul > li > ul > li + li{margin-top:3rem;}
+.hd_navall .navall_content .navall_inner .navall_ul > li > ul > li{margin-bottom:3rem;}
+.hd_navall .navall_content .navall_inner .navall_ul > li > ul > li + li{}
 .hd_navall .navall_content .navall_inner .navall_ul > li > ul > li > a{display: block;padding:1.9rem 3.5rem 1.5rem 2rem;font-size:1.5rem;color:#1C243E;background-color: #F6F8FB;border-radius:1rem;position: relative;transition: all 0.4s;}
 .hd_navall .navall_content .navall_inner .navall_ul > li > ul > li > a:after{content:"";position: absolute;right:2rem;top:50%;margin-top:-0.6rem;width:1.2rem;height:1.2rem;transition: all 0.4s;background-position: center center;background-repeat: no-repeat;background-image: url('../images/common/sub_nav_inner_arrow.svg');}
 .hd_navall .navall_content .navall_inner .navall_ul > li > ul > li > a:before{content:"";position: absolute;right:3rem;top:50%;margin-top:0.6rem;width:1.2rem;height:1.2rem;transition: all 0.4s;background-position: center center;background-repeat: no-repeat;background-image: url('../images/common/sub_nav_inner_arrow.svg');filter: brightness(10);opacity:0;}

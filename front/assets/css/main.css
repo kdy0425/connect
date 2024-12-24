@@ -82,7 +82,7 @@ background-image: linear-gradient(to right, #434859, #434859);background-repeat:
 .main_faq .faq_content{}
 .main_faq .faq_content .item{background-color: #fff;border-radius:1.5rem;overflow: hidden;}
 .main_faq .faq_content .item + .item{margin-top:2.5rem;}
-.main_faq .faq_content .item .faq_q{width:100%;border:0;text-align: left;padding:3rem 7rem 3rem 9.5rem;position: relative;color:#434859;font-size:2rem;font-weight: 500;background-color: #fff;}
+.main_faq .faq_content .item .faq_q{width:100%;border:0;text-align: left;padding:3rem 7rem 3rem 9.5rem;position: relative;color:#434859;font-size:2rem;font-weight: 500;background-color: #fff;font-family: 'GmarketSans';}
 .main_faq .faq_content .item .faq_q:hover{text-decoration: underline;}
 .main_faq .faq_content .item .faq_q:hover:before{text-decoration: none;}
 .main_faq .faq_content .item .faq_q:after{content:"";position: absolute;right:3rem;top:3.8rem;width:2.4rem;height:1.4rem;background-image: url('../images/content/main_faq_arrow.svg');background-position: center center;background-repeat: no-repeat;background-size: cover;transition:all 0.3s;}

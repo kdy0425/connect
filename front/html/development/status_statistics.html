@@ -476,7 +476,9 @@
                                 tooltipHTML: `
                                     <div class="ct_tooltip">
                                         <div class="category">{category}</div>
-                                        <div class="value"><strong>{value}</strong><span>명</span></div>
+                                        <div class="value" style="color:{dataItem.dataContext.color};">
+                                            <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 15h12v-2a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v2Z" fill="{dataItem.dataContext.color}"/><path d="M11.5 5.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" fill="{dataItem.dataContext.color}"/></svg>
+                                            <strong>{value}</strong><span>명</span></div>
                                     </div>
                                 `
                             });

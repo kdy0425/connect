@@ -2107,7 +2107,7 @@ img.no_image{max-width:9rem;}
 .ct_tooltip{padding:0;border:0 !important;margin:-10px -10px -8px;text-align: center;position: relative;z-index: 5;background-color: #fff;padding:10px;border-radius:6px;}
 .ct_tooltip .category{color:#1C243E;font-size:15px;font-weight:600;margin-bottom:6px;}
 .ct_tooltip .category br{display: none;}
-.ct_tooltip .value{display:inline-flex;align-items: center;color:#3692DF;padding-left:17px;background-position: left center;background-repeat: no-repeat;background-image: url('../../assets/images/content/ct_tooltip_person.png');background-size: 16px;}
+.ct_tooltip .value{display:inline-flex;align-items: center;color:#3692DF;}
 .ct_tooltip .value strong{font-size:21px;font-weight:700;margin:0 1px;}
 .ct_tooltip .value span{font-size:15px;font-weight:600;}
 

@@ -377,9 +377,11 @@ input.font_gray{color: #808698 !important;}
 #aside .aside_nav > ul > li{border-bottom:1px solid rgba(67, 72, 89, 0.1);}
 #aside .aside_nav > ul > li > button,
 #aside .aside_nav > ul > li > a{display: block;width:100%;background-color:#fff;border:0;text-align:left;padding:2rem 4rem 2rem 2rem;color:#1C243E;font-size:1.6rem;font-weight:500;position: relative;word-break: keep-all;}
+#aside .aside_nav > ul > li > a:before{content:"";position: absolute;right:2rem;top:50%;margin-top:-0.6rem;width:1.2rem;height:1.2rem;background-position: center center;background-repeat: no-repeat;background-image: url('../images/content/aside_nav_arrow.svg');transition: all 0.3s;transform: rotate(90deg);opacity:0.6;}
 #aside .aside_nav > ul > li > button:before{content:"";position: absolute;right:2rem;top:50%;margin-top:-0.6rem;width:1.2rem;height:1.2rem;background-position: center center;background-repeat: no-repeat;background-image: url('../images/content/aside_nav_arrow.svg');transition: all 0.3s;transform: rotate(-180deg);opacity:0.6;}
 #aside .aside_nav > ul > li > button.move:before{display:none;}
 #aside .aside_nav > ul > li > .active{color:#378FD7;font-weight:600;}
+#aside .aside_nav > ul > li > .active:hover{color:#378FD7;}
 #aside .aside_nav > ul > li > ul{padding:1.7rem 0;background-color: #F6F8FB;display:none;}
 #aside .aside_nav > ul > li > ul > li{}
 #aside .aside_nav > ul > li > ul > li > a{display: block;padding:0.9rem 2rem;color:#434859;font-size:1.5rem;font-weight:500;}
@@ -389,8 +391,8 @@ input.font_gray{color: #808698 !important;}
 
 #aside .aside_nav > ul > li > button:hover,
 #aside .aside_nav > ul > li > a:hover{color:#000;}
-#aside .aside_nav > ul > li.active > button:before,
-#aside .aside_nav > ul > li.active > a:before{transform: rotate(0);opacity: 1;}
+#aside .aside_nav > ul > li.active > button:before{transform: rotate(0);opacity: 1;}
+#aside .aside_nav > ul > li.active > a:before{opacity: 1;}
 @media screen and (max-width:1040px) {
     .location{margin-top:6rem;}
     .location .items{flex-wrap:wrap;padding:1rem 1.5rem;border:0;}

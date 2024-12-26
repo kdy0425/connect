@@ -20,7 +20,7 @@
 #header #nav .sub_nav .nav_info .text{font-size:1.6rem;font-weight:500;}
 
 #header #nav .sub_nav_inner > ul{flex:1 1 auto;display: flex;padding:4rem 5rem 5rem 5rem;word-break: keep-all;}
-#header #nav .sub_nav_inner > ul > li{flex:1 1;font-weight:500;max-width:40rem;}
+#header #nav .sub_nav_inner > ul > li{flex:1 1;font-weight:500;}
 #header #nav .sub_nav_inner > ul > li + li{margin-left:3rem;}
 #header #nav .sub_nav_inner > ul > li > a{display: block;padding:1.9rem 3.5rem 1.3rem 2rem;font-size:1.6rem;color:#1C243E;background-color: #F6F8FB;border:1px solid #F6F8FB;border-radius:1rem;position: relative;transition: all 0.4s;}
 #header #nav .sub_nav_inner > ul > li > a:after{content:"";position: absolute;right:2rem;top:50%;margin-top:-0.6rem;width:1.2rem;height:1.2rem;transition: all 0.4s;background-position: center center;background-repeat: no-repeat;background-image: url('../images/common/sub_nav_inner_arrow.svg');}

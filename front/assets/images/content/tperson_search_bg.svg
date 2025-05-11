@@ -1,1 +1,24 @@
-<svg width="100" height="100" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="5" width="72" height="90" rx="10" fill="#fff"/><path d="M23 70.75h46M23 80.75h26" stroke="#BAD6ED" stroke-width="3" stroke-linecap="round"/><path stroke="#1A6894" stroke-width="3" d="m60.061 53.939 10.606 10.607"/><rect x="71.02" y="55.707" width="26" height="13" rx="3" transform="rotate(45 71.02 55.707)" fill="#B6E3FD"/><circle cx="46" cy="39" r="24" fill="#4EA1E4"/><circle cx="46" cy="39" r="17" fill="#EEF7FF"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="29" y="22" width="34" height="34"><circle cx="46" cy="39" r="17" fill="#4EA1E4"/></mask><g mask="url(#a)" fill="#9CC6E8"><path d="M53.2 36.2a7.2 7.2 0 1 1-14.4 0 7.2 7.2 0 0 1 14.4 0Z"/><path d="M34 53.148a9.6 9.6 0 0 1 9.6-9.6h4.8a9.6 9.6 0 0 1 9.6 9.6v4.8H34v-4.8Z"/></g></svg>
+<svg width="95" height="95" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="95" height="95" fill="url(#paint0_linear_2299_24011)"/>
+<rect width="95" height="95" fill="#378FD7"/>
+<rect x="10" y="2" width="72" height="90" rx="10" fill="white"/>
+<path d="M23 67.75H69" stroke="#BAD6ED" stroke-width="3" stroke-linecap="round"/>
+<path d="M23 77.75H49" stroke="#BAD6ED" stroke-width="3" stroke-linecap="round"/>
+<line x1="60.0607" y1="50.9393" x2="70.6673" y2="61.5459" stroke="#1A6894" stroke-width="3"/>
+<rect x="71.0205" y="52.707" width="26" height="13" rx="3" transform="rotate(45 71.0205 52.707)" fill="#B6E3FD"/>
+<circle cx="46" cy="36" r="24" fill="#4EA1E4"/>
+<circle cx="46" cy="36" r="17" fill="#EEF7FF"/>
+<mask id="mask0_2299_24011" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="29" y="19" width="34" height="34">
+<circle cx="46" cy="36" r="17" fill="#4EA1E4"/>
+</mask>
+<g mask="url(#mask0_2299_24011)">
+<path d="M53.2 33.2C53.2 37.1764 49.9764 40.4 46 40.4C42.0236 40.4 38.8 37.1764 38.8 33.2C38.8 29.2235 42.0236 26 46 26C49.9764 26 53.2 29.2235 53.2 33.2Z" fill="#9CC6E8"/>
+<path d="M34 50.1485C34 44.8466 38.2981 40.5485 43.6 40.5485H48.4C53.7019 40.5485 58 44.8466 58 50.1485V54.9485H34V50.1485Z" fill="#9CC6E8"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2299_24011" x1="0" y1="0" x2="108.617" y2="25.5037" gradientUnits="userSpaceOnUse">
+<stop stop-color="#28B795"/>
+<stop offset="1" stop-color="#30D6AE"/>
+</linearGradient>
+</defs>
+</svg>

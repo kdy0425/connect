@@ -1,4 +1,4 @@
-#content.main_content{font-family: 'GmarketSans';margin-top:10rem;margin-bottom:0;padding-top:4rem;}
+#content.main_content{font-family: 'GmarketSans';margin-top:10rem;margin-bottom:0;padding-top:3rem;}
 .main_visual_wrap{display: flex;gap:3rem;}
 .main_visual_slider{width:calc(100% - 60rem);position: relative;}
 .main_visual_slider .slider_wrap{}
@@ -194,7 +194,7 @@ background-image: linear-gradient(to right, #434859, #434859);background-repeat:
 }
 @media screen and (max-width:1040px) {
     #content.main_content{margin-top:6rem;}
-    #content.main_content{padding-top:1.5rem;}
+    #content.main_content{padding-top:0;}
     .main_visual_wrap{display:block;}
     .main_visual_wrap .main_visual_slider{width:100%;}
     .main_visual_slider .slider_wrap .slider{border-radius:1.5rem;height: 30rem;}
@@ -227,8 +227,8 @@ background-image: linear-gradient(to right, #434859, #434859);background-repeat:
     .main_tperson .item .title{font-size:1.6rem;margin:0;word-break: keep-all;}
     .main_tperson .item .text{display: none;}
     .main_tperson .item .link{margin-top:0.8rem;font-size:1.2rem;padding-top:0.2rem;padding-right:1.1rem;background-image: url('../images/content/icon_arrow_right.svg');}
-    .main_tperson .item .tperson_register{background-image: url('../images/content/tperson_register_bg_mobile.svg');background-position:right 1rem center;}
-    .main_tperson .item .tperson_search{background-image: url('../images/content/tperson_search_bg_mobile.svg');}
+    .main_tperson .item .tperson_register{background-image: url('../images/content/tperson_register_bg_mobile.svg');background-position:right 1rem center;background-size: 4.8rem;}
+    .main_tperson .item .tperson_search{background-image: url('../images/content/tperson_search_bg_mobile.svg');background-position:right bottom 1.2rem;background-size:5.5rem;}
     .main_tperson .item a:hover .link{padding-right:1.1rem;}
 
     .main_links{margin-top:1.5rem;padding:2.5rem 2rem 2rem;}
@@ -295,9 +295,7 @@ background-image: linear-gradient(to right, #434859, #434859);background-repeat:
     .main_links{grid-template-columns: repeat(2, 1fr);}
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:350px) {
     .main_tperson .item .title{font-size:1.5rem;padding-right: 3rem;}
     .main_tperson .item a{padding-right:2rem;}
-    .main_tperson .item .tperson_register{background-size:4rem;}
-    .main_tperson .item .tperson_search{background-size:4.5rem;}
 }

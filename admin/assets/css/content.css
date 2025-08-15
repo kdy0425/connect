@@ -189,6 +189,7 @@ textarea::placeholder{color:#868C98;opacity: 1;}
 .btn.btn_gray{background-color: #F9F9F9;color:#464E67;border:1px solid #F9F9F9;}
 .btn.btn_danger{background-color: #ED516D;bordeR:1px solid #ED516D;color:#fff;}
 .btn.btn_gradation{background: linear-gradient(90deg, #378FD7 3.08%, #487DE3 87.5%);color:#fff;}
+.btn.btn_gline{background-color: #fff;color:#1DA988;bordeR:1px solid #1DA988;}
 
 .btn.btn_dblue:hover{background-color: #0c2047;}
 .btn.btn_submit:hover{background-color: #1673C8;}
@@ -200,6 +201,7 @@ textarea::placeholder{color:#868C98;opacity: 1;}
 .btn.btn_lblue:hover{bordeR:1px solid rgba(22, 115, 200, 0.2);color:rgba(22, 115, 200, 1);}
 .btn.btn_line:hover{color:#434859;}
 .btn.btn_line:disabled{color:rgba(134, 140, 152, 1);cursor: default;}
+.btn.btn_gline:hover{color:#118a6d;bordeR:1px solid #118a6d;}
 
 .btn.btn_lblue:hover svg.stroke path{stroke:rgba(22, 115, 200, 1);}
 .btn.btn_sline:hover svg.fill path{fill:rgba(22, 115, 200, 1);}

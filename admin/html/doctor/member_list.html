@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1200"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>CONNECT 관리자</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/toastify.min.css" />
+<link href="../../assets/css/pikaday.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/pikaday.js"></script>
+<script src="../../assets/js/inputmask.js"></script>
+<script src="../../assets/js/toastify-js.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">CONNECT 관리자</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="aside" class="active">
+        <script>
+            //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
+            const menuState = getCookie('menuState');
+            const asideElement = document.getElementById('aside');
+            if (menuState === 'open') {
+                asideElement.classList.add('active');
+            }else if (menuState === 'closed') {
+                asideElement.classList.remove('active');
+            }
+        </script>
+		<div id="logo">
+            <a href="../main/main.html" class="large"><img src="../../assets/images/hd_logo.svg" alt="CONNECT 관리자"></a>
+            <a href="../main/main.html" class="small"><img src="../../assets/images/hd_logo_small.svg" alt="CONNECT 관리자"></a>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_home.svg" class="nav_icon"><span>HOME 화면 관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메인 배너 관리</a></li> 
+                        <li><a href="javascript:;">메인 팝업 관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_member.svg" class="nav_icon"><span>회원관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_db.svg" class="nav_icon"><span>바이오메디컬 DB</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_development.svg" class="nav_icon"><span>글로벌 인재육성</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_community.svg" class="nav_icon"><span>커뮤니티 관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_doctor.svg" class="nav_icon"><span>의사과학자협회관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;" class="active">회원관리</a></li>
+                        <li><a href="javascript:;">사업안내</a></li>
+                        <li><a href="javascript:;">관련소식</a></li>
+                        <li><a href="javascript:;">뉴스레터</a></li>
+                        <li><a href="javascript:;">통합자료실</a></li>
+                        <li><a href="javascript:;">영상미디어</a></li>
+                        <li><a href="javascript:;">공지사항</a></li>
+                        <li><a href="javascript:;">FAQ</a></li>
+                        <li><a href="javascript:;">Q&A</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><img src="../../assets/images/nav_icon_admin.svg" class="nav_icon"><span>운영자 관리</span></a>
+                    <ul>
+                        <li><a href="javascript:;">메뉴명1</a></li>
+                        <li><a href="javascript:;">메뉴명2</a></li>
+                        <li><a href="javascript:;">메뉴명3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+	</div>
+	<!-- //header -->	
+
+    <div id="content_wrap">
+        <div id="header">
+            <div class="l">
+                <button id="menu_toggle" type="button" class="active" onclick="asideActive();">메뉴열기</button>
+                <script>
+                    //자바스크립트로 쿠키확인 후 처리하기때문에 약간의 딜레이가 있을수 있음. 딜레이 없이 하려면 회원db에 상태값 저장해서 로드시 클래스 출력해서 사용하면 됨.  쿠키 딜레이 최소화 하기위해 태그 바로밑에서 스크립트 실행
+                    const menuToggle = document.getElementById('menu_toggle');
+                    if (menuState === 'open') {
+                        menuToggle.classList.add('active');
+                    }else if (menuState === 'closed') {
+                        menuToggle.classList.remove('active');
+                    }
+
+                    //메뉴 토글 & 쿠키저장
+                    function asideActive(){
+                        const menuToggle = document.getElementById('menu_toggle');
+                        const asideElement = document.getElementById('aside');
+
+                        //메뉴 닫기
+                        if(menuToggle.classList.contains('active')){
+                            menuToggle.classList.remove('active');
+                            asideElement.classList.remove('active');
+                            setCookie('menuState', 'closed', 0);//쿠키저장
+                        }else{//메뉴 열기
+                            menuToggle.classList.add('active');
+                            asideElement.classList.add('active');
+                            setCookie('menuState', 'open', 0); //쿠키저장
+                        }
+                    }
+                </script>
+            </div>
+            <div class="r">
+                <div class="header_links">
+                    <div class="item"><a href="../login/login.html" class="logout"><img src="../../assets/images/header_icon_logout.svg" class="header_icon"><span>로그아웃</span></a></div>
+                    <div class="item"><a href="javascript:;" class="password"><img src="../../assets/images/header_icon_member.svg" class="header_icon"><span>개인정보수정</span></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div id="content">
+            <div class="page_title">
+                <div>
+                    <div class="page_history">
+                        <span class="item">Home</span>
+                        <span class="item">의사과학자협회 관리</span>
+                        <span class="item">회원관리</span>
+                    </div>
+                    <h2>회원관리</h2>
+                </div>
+            </div>
+            <div class="page">
+                <div class="search_form">
+                    <form action="">
+                        <div class="search_inner">
+                            <div class="items">
+                                <div class="items_row">
+                                    <div class="item">
+                                        <div class="tit">검색어</div>
+                                        <div class="cnt">
+                                            <div class="input_group">
+                                                <select name="" id="">
+                                                    <option value="">전체</option>
+                                                </select>
+                                            </div>
+                                            <div class="input_group">
+                                                <div class="input">
+                                                    <input type="text" placeholder="검색어를 입력하세요.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="tit">가입신청일</div>
+                                        <div class="cnt date_control">
+                                            <div class="radio_taps">
+                                                <button type="button">오늘</button>
+                                                <button type="button">3개월</button>
+                                                <button type="button">6개월</button>
+                                                <button type="button">1년</button>
+                                                <button type="button">전체</button>
+                                            </div>
+                                            <div class="input_group">
+                                                <div class="input"><input type="text" class="datepicker date_start"></div>
+                                                <span class="dash">-</span>
+                                                <div class="input"><input type="text" class="datepicker date_end"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="tit">회원상태</div>
+                                        <div class="cnt label_control">
+                                            <label class="checkbox"><input type="radio" name="mb_status" class="check_all"><span class="ck_icon"></span>전체</label>
+                                            <label class="checkbox"><input type="radio" name="mb_status"><span class="ck_icon"></span>가입요청</label>
+                                            <label class="checkbox"><input type="radio" name="mb_status"><span class="ck_icon"></span>가입완료</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn btn_md btn_line">
+                                    <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.611 1v4h4" stroke="#525A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="m2.57 3.848-.11-.063a5.25 5.25 0 1 1 .065 6.512.07.07 0 0 1 .008-.005c.009-.006.03-.015.074-.005.05.011.11.044.156.097a5.124 5.124 0 1 0-.192-6.536Z" stroke="#525A6B" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                                    초기화
+                                </button>
+                                <button type="button" class="btn btn_md btn_blue">
+                                    <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5.077" cy="5.077" r="4.327" stroke="#fff" stroke-width="1.5"/><path d="M8.307 8.308 11.999 12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="table_wrap">
+                    <div class="list_top">
+                        <div class="caption">총 등록 회원 계정 <strong>521</strong>개</div>
+                    </div>
+                    <div class="table_list label_control">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width:6rem;max-width:6rem;">
+                                        <label class="checkbox single"><input type="checkbox" class="check_all"><span class="ck_icon"></span></label>
+                                    </th>
+                                    <th>NO</th>
+                                    <th>회원 ID</th>
+                                    <th>이름</th>
+                                    <th>전화번호</th>
+                                    <th>이메일(E-mail)</th>
+                                    <th>회원구분</th>
+                                    <th>가입신청일</th>
+                                    <th>가입승인일</th>
+                                    <th>회원상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
+                                    </td>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>일반회원</td>
+                                    <td>2024-08-20</td>
+                                    <td>2024-08-20</td>
+                                    <td><span class="badge gray">가입완료</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label>
+                                    </td>
+                                    <td>1</td>
+                                    <td>abcd1234</td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd1234@trionsoft.co.kr</td>
+                                    <td>일반회원</td>
+                                    <td>2024-08-20</td>
+                                    <td></td>
+                                    <td><span class="badge green">가입요청</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bottom_btns">
+                        <div>
+                            <div class="item">
+                                <select name="" id="" style="width:11rem;">
+                                    <option value="">10개</option>
+                                    <option value="">20개</option>
+                                    <option value="">30개</option>
+                                    <option value="">40개</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="r">
+                            <div class="paging">
+                                <a href="javascript:;" class="pg first disabled"></a>
+                                <a href="javascript:;" class="pg prev disabled"></a>
+                                <a href="javascript:;" class="pg first"></a>
+                                <a href="javascript:;" class="pg prev "></a>
+                                <a href="javascript:;">1</a>
+                                <a href="javascript:;" class="active">2</a>
+                                <a href="javascript:;">3</a>
+                                <a href="javascript:;" class="pg next"></a>
+                                <a href="javascript:;" class="pg end"></a>
+                                <a href="javascript:;" class="pg next disabled"></a>
+                                <a href="javascript:;" class="pg end disabled"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+</div>
+
+
+</body>
+</html>	 

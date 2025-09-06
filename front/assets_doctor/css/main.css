@@ -15,7 +15,7 @@
 .main_visual_slider .item .btn{margin-top:3rem;position: relative;z-index: 10;display: inline-block;color:#fff;border-radius:3rem;background-color: #3790D7;padding:1.8rem 4.6rem 1.8rem 3rem;font-size:1.5rem;font-weight:700;background-position: right 3rem center;background-repeat: no-repeat;background-image: url('../images/content/icon_arrow_right.svg');transition:all 0.3s;}
 .main_visual_slider .item .btn:hover{background-color: #277cc2;background-position: right 2.2rem center;}
 .main_visual_slider .item br{display: none;}
-.main_visual_slider .paging_info{position: absolute;left:5rem;bottom:4rem;z-index: 10;width:100%;display:flex;align-items: center;}
+.main_visual_slider .paging_info{position: absolute;left:6rem;bottom:6rem;z-index: 10;width:100%;display:flex;align-items: center;}
 .main_visual_slider .paging_info .progress{width:12.8rem;height: 0.3rem;margin-right:2rem;background-color:rgba(28, 36, 62, 0.25);background-size: 0 100%;
 background-image: linear-gradient(to right, #434859, #434859);background-repeat: no-repeat;transition: background-size .4s ease-in-out;}
 .main_visual_slider .paging_info .btn{width:2.5rem;height:2.5rem;border:0;background-color: transparent;background-position: center center;background-repeat: no-repeat;text-indent:-999em;overflow:hidden;}
@@ -56,7 +56,7 @@ background-image: linear-gradient(to right, #434859, #434859);background-repeat:
 
 .lastest_gall{}
 .lastest_gall .item{}
-.lastest_gall .item a{display: block;height: 464px;position: relative;border-radius: 15px;transition: all 0.3s;}
+.lastest_gall .item a{display: block;height: 464px;position: relative;border-radius: 15px;overflow: hidden;;transition: all 0.3s;}
 .lastest_gall .item .thum{height:100%;background-size: cover;background-repeat: no-repeat;border-radius: 15px;}
 .lastest_gall .item .cnt{width: 100%;;padding:30px;display: flex;flex-direction: column;background-color:rgba(255,255,255,.9);position: absolute;left:0;bottom:0;gap:12px;transition: all 0.3s;border-radius: 0 0 13px 13px;}
 .lastest_gall .item .cnt .subject{color:#434859;font-size:2rem;font-weight:700;width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
@@ -92,14 +92,14 @@ background-image: linear-gradient(to right, #434859, #434859);background-repeat:
 @media screen and (max-width:1600px) {
     #content.main_content{padding-top:2.5rem;}
     
-    .main_visual_slider .item{padding:3.5rem 3rem;}
+    .main_visual_slider .item{padding:4.5rem 4rem;}
     .main_visual_slider .item .title{font-size:3.2rem;max-width:70%;}
     .main_visual_slider .item .title.en{font-size:2.6rem;}
     .main_visual_slider .item .text{margin-top:1.5rem;font-size:1.7rem;max-width:70%;}
     .main_visual_slider .item .text.en{font-size:1.5rem;}
     .main_visual_slider .item .btn{padding:1.8rem 4.2rem 1.2rem 2.6rem;font-size:1.4rem;background-position: right 2.5rem center;}
     .main_visual_slider .item .btn:hover{background-position: right 1.8rem center;}
-    .main_visual_slider .paging_info{left:3rem;bottom:3.5rem;}
+    .main_visual_slider .paging_info{left:4rem;bottom:4.5rem;}
     .main_links_wrap{gap:2rem;margin-top:2rem;}
     .main_tperson .item a{background-position: right 3rem bottom 3rem;background-size:6rem;padding:3.5rem 9rem 3.5rem 3rem;}
     .main_links .item a{padding:2.8rem 1.5rem 3.5rem;font-size:1.6rem;}
@@ -158,7 +158,7 @@ background-image: linear-gradient(to right, #434859, #434859);background-repeat:
     .main_visual_slider .item .btn:hover{background-position: right 2rem center;}
     .main_visual_slider .item br{display: inline;}
 
-    .main_visual_slider .paging_info{left:1.7rem;bottom:2.5rem;}
+    .main_visual_slider .paging_info{left:2rem;bottom:2.5rem;}
     .main_visual_slider .paging_info .progress{display: none;}
     .main_visual_slider .paging_info .btn{width:1.7rem;height:1.7rem;}
     .main_visual_slider .paging_info .btn_prev{margin-right:0.5rem;background-image: url('../images/content/slider_arrow_left2.svg');}

@@ -2145,3 +2145,13 @@ img.no_image{max-width:9rem;}
     .donut_per > span{font-size: 18px;}
     .donut_per > span span{font-size:14px;}
 }
+
+.ready_page{text-align: center;}
+.ready_page:before{content:"";display: block;margin:0 auto 5rem;height: 168px;background-position: center center;background-repeat: no-repeat;background-image: url('../images/content/ready_page.svg');}
+.ready_page h2{color: #1C243E;font-size: 5.4rem;font-weight:700;font-family: 'GmarketSans';line-height: 1;}
+.ready_page p{color: #434859;font-size:2.4rem;margin-top:3rem;}
+@media screen and (max-width:1040px) {
+    .ready_page:before{margin:0 auto 3rem;height: 100px;background-size: contain;}
+    .ready_page h2{font-size: 3rem;}
+    .ready_page p{font-size:1.7rem;margin-top:2rem;}
+}
